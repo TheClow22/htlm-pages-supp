@@ -235,7 +235,7 @@ a{text-decoration:none;color:inherit}
 #tr .tl-body p{margin-bottom:10px}
 #tr .tl-roles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
 #tr .tl-role{padding:8px 12px;border-radius:8px;background:rgba(15,17,20,.7);border:1px solid rgba(255,255,255,.06);font-family:var(--font);font-size:.8rem;color:var(--contrastLight)}
-#tr .tl-role strong{color:var(--co-2);font-weight:600;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:2px}
+#tr .tl-role strong{color:var(--co-3);font-weight:600;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:2px}
 #tr .tl-item.current::before{background:var(--co-1-glow);box-shadow:0 0 0 2px var(--co-1-glow),0 0 20px rgba(196,58,80,.4)}
 #tr .tl-item.current .tl-era{color:var(--co-1-glow)}
 
