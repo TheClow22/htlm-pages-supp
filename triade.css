@@ -35,59 +35,30 @@ a{text-decoration:none;color:inherit}
 #tr{position:relative;min-height:100vh}
 
 /* ═══════════════════════════════════════════
-   BACKGROUND — RICH LAYERED (not just black)
-   ═══════════════════════════════════════════
-   Layer 1: Base color (very dark wine, not pure black)
-   Layer 2: Radial color pools (visible reds/teals)
-   Layer 3: Noise texture
-   Layer 4: Animated drifting smoke clouds (CSS)
-   Layer 5: Vignette
+   BACKGROUND — WALLPAPER + OVERLAY
    ═══════════════════════════════════════════ */
 
-/* Layer 1+2: Base + color pools */
+/* Layer 1: Wallpaper image */
 #tr .abg{
   position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:
-    radial-gradient(ellipse 70% 50% at 15% 85%,rgba(122,31,43,.18) 0%,transparent 70%),
-    radial-gradient(ellipse 60% 45% at 80% 20%,rgba(14,59,68,.14) 0%,transparent 65%),
-    radial-gradient(ellipse 50% 40% at 50% 60%,rgba(122,31,43,.08) 0%,transparent 55%),
-    radial-gradient(ellipse 80% 60% at 30% 30%,rgba(14,59,68,.06) 0%,transparent 60%),
-    linear-gradient(170deg,#0d0a0f 0%,#0f0c10 30%,#0e0b11 50%,#0c0a0e 100%)
+  background:url('https://i.postimg.cc/tRf7n67n/Chat-GPT-Image-16-fevr-2026-21-42-36.png') center/cover no-repeat fixed;
 }
 
-/* Layer 3: Noise grain */
+/* Layer 2: Dark overlay (lets image show through subtly) */
 #tr .abg::before{
-  content:'';position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;
+  content:'';position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:rgba(8,6,10,.72);
+}
+
+/* Layer 3: Grain texture */
+#tr .abg::after{
+  content:'';position:fixed;inset:0;z-index:2;pointer-events:none;opacity:.04;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-repeat:repeat;background-size:200px
 }
 
-/* Layer 5: Vignette */
-#tr .abg::after{
-  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
-  background:radial-gradient(ellipse at 50% 50%,transparent 40%,rgba(8,6,10,.5) 100%)
-}
-
-/* Layer 4: Animated smoke clouds */
-#tr .smoke{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
-#tr .smoke i{
-  position:absolute;border-radius:50%;
-  animation:smokeRise linear infinite;
-  opacity:0;
-}
-#tr .smoke i:nth-child(1){width:600px;height:400px;background:radial-gradient(ellipse,rgba(122,31,43,.10) 0%,transparent 70%);left:-5%;bottom:-20%;animation-duration:22s;animation-delay:0s}
-#tr .smoke i:nth-child(2){width:500px;height:350px;background:radial-gradient(ellipse,rgba(14,59,68,.09) 0%,transparent 70%);right:-5%;bottom:-15%;animation-duration:28s;animation-delay:4s}
-#tr .smoke i:nth-child(3){width:450px;height:320px;background:radial-gradient(ellipse,rgba(122,31,43,.07) 0%,transparent 70%);left:30%;bottom:-25%;animation-duration:25s;animation-delay:8s}
-#tr .smoke i:nth-child(4){width:550px;height:380px;background:radial-gradient(ellipse,rgba(90,20,30,.08) 0%,transparent 70%);right:20%;bottom:-20%;animation-duration:30s;animation-delay:12s}
-#tr .smoke i:nth-child(5){width:400px;height:280px;background:radial-gradient(ellipse,rgba(14,59,68,.06) 0%,transparent 70%);left:60%;bottom:-18%;animation-duration:26s;animation-delay:16s}
-
-@keyframes smokeRise{
-  0%{opacity:0;transform:translateY(0) translateX(0) scale(.8)}
-  15%{opacity:1}
-  50%{opacity:.7;transform:translateY(-45vh) translateX(30px) scale(1.1)}
-  85%{opacity:.3}
-  100%{opacity:0;transform:translateY(-95vh) translateX(-20px) scale(1.4)}
-}
+/* Smoke div hidden (no longer needed) */
+#tr .smoke{display:none}
 
 /* ═══════════════════════════════════════════
    VIEWS
@@ -202,7 +173,7 @@ a{text-decoration:none;color:inherit}
 /* ═══════════════════════════════════════════
    ORGANISATION — 2 COLUMNS
    ═══════════════════════════════════════════ */
-#tr .org-layout{display:grid;grid-template-columns:1fr 1fr;gap:50px;max-width:1200px;margin:0 auto 60px;padding:0 20px;align-items:start}
+#tr .org-layout{display:grid;grid-template-columns:58% 42%;gap:40px;max-width:1200px;margin:0 auto 60px;padding:0 20px;align-items:start}
 
 /* Orgchart */
 #tr .org{position:sticky;top:20px}
@@ -212,11 +183,11 @@ a{text-decoration:none;color:inherit}
 #tr .org-root::after{content:'';position:absolute;bottom:0;left:50%;width:2px;height:25px;background:var(--co-1)}
 
 /* Node base */
-#tr .org-node{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid rgba(122,31,43,.25);background:linear-gradient(135deg,rgba(122,31,43,.1),rgba(14,59,68,.06));text-align:center;transition:all .3s}
+#tr .org-node{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid rgba(122,31,43,.25);background:linear-gradient(135deg,rgba(122,31,43,.1),rgba(14,59,68,.06));text-align:center;transition:all .3s}
 #tr .org-node:hover{border-color:var(--co-1);box-shadow:0 0 20px rgba(122,31,43,.12)}
-#tr .org-node .on-title{font-family:var(--font-3);font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-1);margin-bottom:2px}
-#tr .org-node .on-name{font-family:var(--font-3);font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;color:var(--contrast)}
-#tr .org-node .on-sub{font-family:var(--font-4);font-size:.65rem;color:var(--textMuted);font-style:italic;margin-top:1px}
+#tr .org-node .on-title{font-family:var(--font-3);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-1);margin-bottom:2px}
+#tr .org-node .on-name{font-family:var(--font-3);font-size:.92rem;letter-spacing:.05em;text-transform:uppercase;color:var(--contrast)}
+#tr .org-node .on-sub{font-family:var(--font-4);font-size:.7rem;color:var(--textMuted);font-style:italic;margin-top:1px}
 
 /* Branches (Yeux / Griffe / Queue) */
 #tr .org-branches{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;position:relative;padding-top:2px}
@@ -226,14 +197,14 @@ a{text-decoration:none;color:inherit}
 
 /* Sub-children under a branch */
 #tr .org-children{display:flex;gap:4px;justify-content:center;flex-wrap:wrap;margin-top:8px}
-#tr .org-child{padding:4px 8px;border-radius:6px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);font-family:var(--font);font-size:.6rem;color:var(--contrastLight);letter-spacing:.03em}
+#tr .org-child{padding:5px 10px;border-radius:6px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);font-family:var(--font);font-size:.65rem;color:var(--contrastLight);letter-spacing:.03em}
 
 /* Tiers (clans + ranks) */
 #tr .org-tier{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:25px;padding-top:18px;position:relative}
 #tr .org-tier::before{content:'';position:absolute;top:0;left:8%;right:8%;height:1px;background:linear-gradient(to right,transparent,var(--co-2),transparent)}
-#tr .org-tier .org-node{padding:8px 12px}
-#tr .org-tier .org-node .on-title{font-size:.48rem}
-#tr .org-tier .org-node .on-name{font-size:.72rem}
+#tr .org-tier .org-node{padding:10px 14px}
+#tr .org-tier .org-node .on-title{font-size:.52rem}
+#tr .org-tier .org-node .on-name{font-size:.78rem}
 
 /* Removed org-div (was causing double line) */
 
