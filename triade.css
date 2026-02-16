@@ -41,7 +41,7 @@ a{text-decoration:none;color:inherit}
 /* Layer 1: Wallpaper image */
 #tr .abg{
   position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:url('https://i.postimg.cc/tRf7n67n/Chat-GPT-Image-16-fevr-2026-21-42-36.png') center/cover no-repeat fixed;
+  background:url('https://i.postimg.cc/DfDm4GmQ/Chat-GPT-Image-16-fevr-2026-21-42-11.png') center/cover no-repeat fixed;
 }
 
 /* Layer 2: Dark overlay (lets image show through subtly) */
