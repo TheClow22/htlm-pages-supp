@@ -72,7 +72,7 @@ a{text-decoration:none;color:inherit}
 #tr .hm{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:40px 20px;text-align:center}
 #tr .ht .l1{font-family:var(--font-2);font-size:clamp(2rem,5vw,3.5rem);color:var(--contrast);display:block;margin-bottom:4px;line-height:1;font-weight:400}
 #tr .ht .l2{font-family:var(--font-3);font-size:clamp(3rem,8vw,6rem);text-transform:uppercase;background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 30px rgba(140,0,12,.3));line-height:1.1;letter-spacing:.15em}
-#tr .ht .l3{font-family:var(--font-3);font-size:clamp(1rem,2.5vw,1.5rem);letter-spacing:.5em;text-transform:uppercase;color:var(--co-1);display:block;margin-top:6px}
+#tr .ht .l3{font-family:var(--font-3);font-size:clamp(1rem,2.5vw,1.5rem);letter-spacing:.5em;text-transform:uppercase;color:var(--co-3);display:block;margin-top:6px}
 #tr .hs{font-family:var(--font-4);font-size:clamp(1rem,2vw,1.15rem);color:var(--contrastLight);max-width:650px;margin:25px auto 60px;font-style:italic;font-weight:400;line-height:1.8}
 
 /* Portal cards */
