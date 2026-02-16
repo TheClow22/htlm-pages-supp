@@ -11,7 +11,7 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
 :root{
-  --co-1:#480896;--co-2:#3A3F45;--co-3:#96081D;
+  --co-1:#960814;--co-2:#3A3F45;--co-3:#480896;
   --co-gradient:linear-gradient(45deg,var(--co-3),var(--co-1),var(--co-3));
   --co-1-light:#a62e3d;--co-1-glow:#c43a50;--co-3-light:#14596a;
   --c1:#0a0c0e;
