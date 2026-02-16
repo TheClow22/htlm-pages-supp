@@ -280,6 +280,23 @@ a{text-decoration:none;color:inherit}
 #tr .vlb .lbc{position:absolute;top:25px;right:30px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:white;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.5rem;transition:all .3s}
 #tr .vlb .lbc:hover{background:rgba(140,0,12,.2);border-color:var(--co-1)}
 
+/* Styles de texte étendus aux blocs chrono + orga */
+#tr .tl-body u2,#tr .rank-body u2{color:var(--contrast);box-shadow:inset 0 -6px 0 var(--co-1);text-decoration:none}
+#tr .tl-body u3,#tr .rank-body u3{background:linear-gradient(to right,var(--co-1),var(--co-3));background-position:bottom;background-size:100% 1px;background-repeat:no-repeat;padding-bottom:1px;text-decoration:none}
+#tr .tl-body bb1,#tr .rank-body bb1{font-weight:600;color:var(--co-1)}
+#tr .tl-body bb3,#tr .rank-body bb3{font-weight:600;background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#tr .tl-body bb7,#tr .rank-body bb7{font-weight:600;font-family:var(--font-3);color:var(--contrast)}
+#tr .tl-body i3,#tr .rank-body i3{font-style:italic;font-family:var(--font-4);background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#tr .tl-body i2,#tr .rank-body i2{font-style:italic;font-family:var(--font-4);color:var(--co-2)}
+#tr .tl-body c2,#tr .rank-body c2{color:var(--co-3)}
+#tr .tl-body c1,#tr .rank-body c1{color:var(--co-1)}
+#tr .tl-body em,#tr .rank-body em{color:var(--co-1);font-family:var(--font-4);font-style:italic}
+#tr .tl-body bg1,#tr .tl-body bg2,#tr .tl-body bg3,#tr .tl-body bg4,#tr .rank-body bg1,#tr .rank-body bg2,#tr .rank-body bg3,#tr .rank-body bg4{display:inline-block;padding:2px 5px;font-weight:600;border-radius:5px;color:white;text-align:center;font-size:9px;letter-spacing:1px;text-transform:uppercase}
+#tr .tl-body bg1,#tr .rank-body bg1{background:var(--co-1)}
+#tr .tl-body bg3,#tr .rank-body bg3{background:var(--co-gradient)}
+#tr .tl-body time,#tr .rank-body time{display:inline-block;padding:2px 8px;font-weight:600;border-radius:5px;color:white;font-size:9px;letter-spacing:1px;text-transform:uppercase;background:rgba(140,0,12,.35);border:1px solid rgba(140,0,12,.4)}
+#tr .tl-body ls,#tr .rank-body ls{font-family:'Courier New',monospace;letter-spacing:4px}
+
 /* ═══════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════ */
