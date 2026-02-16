@@ -47,7 +47,7 @@ a{text-decoration:none;color:inherit}
 /* Layer 2: Dark overlay (lets image show through subtly) */
 #tr .abg::before{
   content:'';position:fixed;inset:0;z-index:1;pointer-events:none;
-  background:rgba(8,6,10,.74);
+  background:rgba(8,6,10,.68);
 }
 
 /* Layer 3: Grain texture */
