@@ -190,7 +190,7 @@ a{text-decoration:none;color:inherit}
 /* Node base */
 #tr .org-node{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid rgba(140,0,12,.25);background:linear-gradient(135deg,rgba(140,0,12,.2),rgba(72,8,150,.15));backdrop-filter:blur(4px);text-align:center;transition:all .3s}
 #tr .org-node:hover{border-color:var(--co-1);box-shadow:0 0 20px rgba(140,0,12,.12)}
-#tr .org-node .on-title{font-family:var(--font-3);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-1);margin-bottom:2px}
+#tr .org-node .on-title{font-family:var(--font-3);font-size:.82rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-3);margin-bottom:2px}
 #tr .org-node .on-name{font-family:var(--font-3);font-size:.92rem;letter-spacing:.05em;text-transform:uppercase;color:var(--contrast)}
 #tr .org-node .on-sub{font-family:var(--font-4);font-size:.7rem;color:var(--textMuted);font-style:italic;margin-top:1px}
 
