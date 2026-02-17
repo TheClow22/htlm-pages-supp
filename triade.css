@@ -126,8 +126,8 @@ a{text-decoration:none;color:inherit}
    SECTION / SUB HEADERS
    ═══════════════════════════════════════════ */
 #tr .sh{text-align:center;margin-bottom:40px}
-#tr .sh h2{font-family:var(--font-3);font-size:.85rem;letter-spacing:.25em;text-transform:uppercase;color:var(--contrast);display:inline-flex;align-items:center;gap:20px}
-#tr .sh h2::before,#tr .sh h2::after{content:'';display:block;width:50px;height:1px;background:var(--co-gradient)}
+#tr .sh h2{font-family:var(--font-3);font-size:2.1rem;letter-spacing:.25em;text-transform:uppercase;color:var(--contrast);display:inline-flex;align-items:center;gap:20px}
+#tr .sh h2::before,#tr .sh h2::after{content:'';display:block;width:80px;height:1px;background:var(--co-gradient)}
 
 /* ═══════════════════════════════════════════
    BUTTONS
@@ -313,7 +313,7 @@ a{text-decoration:none;color:inherit}
 #tr .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:800px;margin:0 auto 60px}
 #tr .pillar{padding:18px 16px;border-radius:12px;background:rgba(15,17,20,.7);border:1px solid rgba(255,255,255,.06);text-align:center}
 #tr .pillar .pillar-icon{font-size:1.4rem;margin-bottom:8px}
-#tr .pillar .pillar-title{font-family:var(--font-3);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-1);margin-bottom:6px}
+#tr .pillar .pillar-title{font-family:var(--font-3);font-size:.11rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-2);margin-bottom:6px}
 #tr .pillar .pillar-body{font-family:var(--font-4);font-size:.8rem;color:var(--contrastLight);line-height:1.6;font-style:italic}
 
 /* Progress bars */
@@ -336,11 +336,11 @@ a{text-decoration:none;color:inherit}
 #tr .form-block .fb-icon{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,rgba(140,0,12,.15),rgba(72,8,150,.12));border:1px solid rgba(140,0,12,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
 #tr .form-block .fb-icon img{width:26px;height:26px;object-fit:contain;filter:brightness(.9)}
 #tr .form-block .fb-label{font-family:var(--font-3);font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--textMuted);margin-bottom:2px}
-#tr .form-block .fb-name{font-family:var(--font-3);font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;color:var(--contrast)}
-#tr .form-block .fb-desc{font-family:var(--font-4);font-size:.82rem;color:var(--contrastLight);line-height:1.7;margin-bottom:14px;font-style:italic}
+#tr .form-block .fb-name{font-family:var(--font-3);font-size:1.2rem;letter-spacing:.06em;text-transform:uppercase;color:var(--contrast)}
+#tr .form-block .fb-desc{font-family:var(--font-4);font-size:.90rem;color:var(--co-1);line-height:1.7;margin-bottom:14px;font-style:italic}
 #tr .form-block .fb-list{list-style:none;padding:0}
-#tr .form-block .fb-list li{font-family:var(--font);font-size:.78rem;color:var(--textColor);padding:3px 0 3px 16px;position:relative}
-#tr .form-block .fb-list li::before{content:'›';position:absolute;left:0;color:var(--co-1);font-weight:700}
+#tr .form-block .fb-list li{font-family:var(--font);font-size:.88rem;color:var(--textColor);padding:3px 0 3px 16px;position:relative}
+#tr .form-block .fb-list li::before{content:'›';position:absolute;left:0;color:var(--co-3);font-weight:700}
 
 /* Weekly schedule grid */
 #tr .schedule{max-width:900px;margin:0 auto 60px;overflow-x:auto}
