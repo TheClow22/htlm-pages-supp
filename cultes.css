@@ -1,0 +1,441 @@
+/* ═══════════════════════════════════════════
+   FONTS
+   ═══════════════════════════════════════════ */
+@font-face{font-family:'Glamour';src:url('https://file.garden/aEdE1_TgcQeU-vp-/Glamour') format('truetype');font-weight:normal;font-style:normal}
+@font-face{font-family:'Wedding Bell';src:url('https://file.garden/aEdE1_TgcQeU-vp-/Wedding%20Bells') format('truetype');font-weight:normal;font-style:normal}
+@font-face{font-family:'Matrix';src:url('https://file.garden/aEdE1_TgcQeU-vp-/Matrix') format('truetype');font-weight:normal;font-style:normal}
+
+/* ═══════════════════════════════════════════
+   VARIABLES — CULTES & FESTIVITÉS
+   Palette jade + bleu profond + rose
+   ═══════════════════════════════════════════ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  /* Couleurs principales — à ajuster selon tes hex définitifs */
+  --co-1:#2D7D6F;          /* Jade (remplace bordeaux) */
+  --co-2:#4A8FA8;          /* Bleu céladon */
+  --co-3:#C4547A;          /* Rose (accent chaud) */
+  --co-gradient:linear-gradient(45deg,var(--co-1),var(--co-3),var(--co-1));
+  --co-1-light:#3aA090;
+  --co-1-glow:#4ec9b8;
+  --co-3-light:#d4758e;
+  --co-2-light:#6ab2cc;
+
+  /* Base */
+  --c1:#080b0a;
+
+  /* Surfaces */
+  --lighter:rgba(240,252,250,0.03);
+  --neutral:rgba(240,252,250,0.04);
+  --neutralDark:rgba(240,252,250,0.07);
+  --neutralDarker:rgba(5,10,9,0.92);
+
+  /* Texte */
+  --contrast:#e8edec;
+  --contrastLight:#b4c4c1;
+  --textColor:#7a9490;
+  --textMuted:#4e6b67;
+
+  /* Typographies */
+  --font:'Raleway','Inter',sans-serif;
+  --font-2:'Wedding Bell',serif;
+  --font-3:'Glamour','Cinzel',serif;
+  --font-4:'Libre Baskerville','Georgia',serif;
+  --font-display:'Cinzel Decorative',serif;
+
+  /* Tailles */
+  --small-size:10px;--little-size:12px;--normal-size:14px;--medium-size:16px;
+  --large-size:20px;--title-size:24px;--xl-size:30px;
+
+  /* Divers */
+  --radius:20px;
+  --ez:cubic-bezier(.4,0,.2,1);
+  --bn:cubic-bezier(.34,1.56,.64,1)
+}
+
+body{background:var(--c1);color:var(--textColor);font-family:var(--font);font-size:var(--normal-size);line-height:1.7;min-height:100vh;overflow-x:hidden}
+body::-webkit-scrollbar{width:4px}
+body::-webkit-scrollbar-track{background:var(--c1)}
+body::-webkit-scrollbar-thumb{background:var(--co-gradient);border-radius:3px}
+img{border:none;max-width:100%}
+a{text-decoration:none;color:inherit}
+#cu{position:relative;min-height:100vh}
+
+/* ═══════════════════════════════════════════
+   BACKGROUND
+   ═══════════════════════════════════════════ */
+#cu .abg{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:url('WALLPAPER_URL_ICI') center/cover no-repeat fixed;
+}
+#cu .abg::before{
+  content:'';position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:rgba(5,10,9,.72);
+}
+#cu .abg::after{
+  content:'';position:fixed;inset:0;z-index:2;pointer-events:none;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat:repeat;background-size:200px
+}
+
+/* Particules décoratives (encens / lueurs) */
+#cu .particles{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+#cu .particles span{position:absolute;border-radius:50%;opacity:0;animation:float-particle 12s ease-in-out infinite}
+#cu .particles span:nth-child(1){width:3px;height:3px;background:var(--co-1-glow);left:15%;animation-delay:0s;animation-duration:10s}
+#cu .particles span:nth-child(2){width:2px;height:2px;background:var(--co-3-light);left:35%;animation-delay:2s;animation-duration:14s}
+#cu .particles span:nth-child(3){width:4px;height:4px;background:var(--co-2-light);left:55%;animation-delay:4s;animation-duration:11s}
+#cu .particles span:nth-child(4){width:2px;height:2px;background:var(--co-1-glow);left:72%;animation-delay:6s;animation-duration:13s}
+#cu .particles span:nth-child(5){width:3px;height:3px;background:var(--co-3);left:88%;animation-delay:1s;animation-duration:15s}
+#cu .particles span:nth-child(6){width:2px;height:2px;background:var(--co-2);left:25%;animation-delay:8s;animation-duration:9s}
+@keyframes float-particle{
+  0%{opacity:0;transform:translateY(100vh) scale(0)}
+  10%{opacity:.7}
+  90%{opacity:.3}
+  100%{opacity:0;transform:translateY(-20px) scale(1.5)}
+}
+
+/* ═══════════════════════════════════════════
+   VIEWS
+   ═══════════════════════════════════════════ */
+#cu .vw{visibility:hidden;overflow:hidden;height:0;opacity:0;position:absolute;width:100%;z-index:1;transition:opacity .4s var(--ez)}
+#cu .vw.on{visibility:visible;overflow:visible;height:auto;opacity:1;position:relative;z-index:2}
+
+/* ═══════════════════════════════════════════
+   HOME
+   ═══════════════════════════════════════════ */
+#cu .hm{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:40px 20px;text-align:center}
+#cu .ht .l1{font-family:var(--font-2);font-size:clamp(2rem,5vw,3.5rem);color:var(--contrast);display:block;margin-bottom:4px;line-height:1;font-weight:400}
+#cu .ht .l2{font-family:var(--font-3);font-size:clamp(2.5rem,7vw,5.5rem);text-transform:uppercase;background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 30px rgba(45,125,111,.35));line-height:1.1;letter-spacing:.12em}
+#cu .ht .l3{font-family:var(--font-3);font-size:clamp(.9rem,2.2vw,1.3rem);letter-spacing:.45em;text-transform:uppercase;color:var(--co-2);display:block;margin-top:8px}
+#cu .hs{font-family:var(--font-4);font-size:clamp(.95rem,1.8vw,1.1rem);color:var(--contrastLight);max-width:620px;margin:28px auto 55px;font-style:italic;font-weight:400;line-height:1.9}
+
+/* Séparateur décoratif accueil */
+#cu .hdivider{display:flex;align-items:center;gap:18px;margin-bottom:50px}
+#cu .hdivider::before,#cu .hdivider::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,var(--co-1),transparent)}
+#cu .hdivider span{font-family:var(--font-3);font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--textMuted)}
+
+/* Portail cards accueil */
+#cu .pts{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;max-width:820px;width:100%}
+#cu .pt{position:relative;cursor:pointer;border-radius:16px;overflow:hidden;background:rgba(8,14,12,.85);border:1px solid rgba(255,255,255,.05);transition:transform .5s var(--bn),box-shadow .5s var(--ez);display:flex;flex-direction:column}
+#cu .pt:hover{transform:translateY(-8px) scale(1.015);box-shadow:0 16px 50px rgba(45,125,111,.18)}
+#cu .pt::after{content:'';position:absolute;inset:0;border-radius:16px;padding:1px;background:linear-gradient(160deg,transparent 30%,var(--co-1),var(--co-3),transparent 70%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .5s;pointer-events:none}
+#cu .pt:hover::after{opacity:1}
+#cu .pt .pticon{width:100%;height:160px;overflow:hidden;position:relative}
+#cu .pt .pticon img{width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.75);transition:all .6s}
+#cu .pt:hover .pticon img{filter:brightness(.75) saturate(.9);transform:scale(1.06)}
+/* Lueur dorée sur l'image au hover */
+#cu .pt .pticon::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(45,125,111,.25));opacity:0;transition:opacity .4s}
+#cu .pt:hover .pticon::after{opacity:1}
+#cu .pt .pi{padding:20px 22px 24px;text-align:left;flex:1;display:flex;flex-direction:column;gap:6px}
+#cu .pt .pl{font-family:var(--font-3);font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--co-1)}
+#cu .pt .pn{font-family:var(--font-3);font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;color:var(--contrast);line-height:1.2}
+#cu .pt .pc{font-family:var(--font-4);font-size:.78rem;color:var(--textMuted);font-style:italic;margin-top:2px}
+
+/* ═══════════════════════════════════════════
+   CATEGORY HEADERS
+   ═══════════════════════════════════════════ */
+#cu .rh{
+  position:relative;min-height:240px;display:flex;align-items:flex-end;overflow:hidden;
+  background:linear-gradient(135deg,rgba(45,125,111,.5) 0%,rgba(196,84,122,.4) 50%,rgba(74,143,168,.45) 100%)
+}
+#cu .rh::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.025) 45%,transparent 55%);
+  background-size:250% 100%;
+  animation:headerShimmer 8s ease-in-out infinite
+}
+@keyframes headerShimmer{
+  0%{background-position:200% 0}100%{background-position:-50% 0}
+}
+#cu .rh::after{
+  content:'';position:absolute;inset:0;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:180px
+}
+#cu .rht{position:relative;z-index:2;padding:0 60px 38px;width:100%}
+#cu .bc{font-family:var(--font);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:10px;font-weight:500}
+#cu .bc span{color:var(--co-1-light)}
+#cu .rtg{font-family:var(--font-4);font-size:1rem;font-style:italic;color:var(--co-3-light);margin-bottom:8px}
+#cu .rti{font-family:var(--font-3);font-size:clamp(2.2rem,6vw,4rem);text-transform:uppercase;letter-spacing:.1em;color:var(--contrast);line-height:1.1}
+#cu .rln{width:70px;height:2px;background:var(--co-gradient);margin-top:16px}
+
+/* ═══════════════════════════════════════════
+   SECTION / SUB HEADERS
+   ═══════════════════════════════════════════ */
+#cu .sh{text-align:center;margin:50px 0 35px}
+#cu .sh h2{font-family:var(--font-3);font-size:1.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--contrast);display:inline-flex;align-items:center;gap:18px}
+#cu .sh h2::before,#cu .sh h2::after{content:'';display:block;width:60px;height:1px;background:var(--co-gradient)}
+
+/* ═══════════════════════════════════════════
+   BUTTONS
+   ═══════════════════════════════════════════ */
+#cu .bb{display:inline-flex;align-items:center;gap:8px;font-family:var(--font);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--textMuted);background:none;border:1px solid rgba(255,255,255,.06);padding:10px 22px;border-radius:var(--radius);cursor:pointer;transition:all .3s;margin-bottom:30px;font-weight:500}
+#cu .bb:hover{color:var(--co-1);border-color:var(--co-1);background:rgba(45,125,111,.06)}
+#cu .bb svg{width:15px;height:15px;transition:transform .3s}
+#cu .bb:hover svg{transform:translateX(-4px)}
+
+/* ═══════════════════════════════════════════
+   BODY
+   ═══════════════════════════════════════════ */
+#cu .rbdy{max-width:1100px;margin:0 auto;padding:50px 40px 80px;background:rgba(8,12,11,.88);border-radius:0 0 16px 16px}
+#cu .rdsc{font-family:var(--font-4);font-size:1rem;color:var(--contrastLight);line-height:2;max-width:850px;margin:0 auto 55px;text-align:justify}
+#cu .rdsc p{margin-bottom:20px}
+
+/* ═══════════════════════════════════════════
+   STYLES DE TEXTE RICH — numérotés
+   ═══════════════════════════════════════════ */
+
+/* STRONG / GRAS */
+#cu bb1{font-weight:600;color:var(--co-1)}
+#cu bb2{font-weight:600;color:var(--co-2)}
+#cu bb3{font-weight:600;background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#cu bb7{font-weight:600;font-family:var(--font-3);color:var(--contrast)}
+
+/* ITALIC */
+#cu i2{font-style:italic;font-family:var(--font-4);color:var(--co-2)}
+#cu i3{font-style:italic;font-family:var(--font-4);background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#cu i4{font-style:italic;font-family:var(--font-4);color:var(--contrast)}
+
+/* UNDERLINE / SURLIGNAGE */
+#cu u2{color:var(--contrast);box-shadow:inset 0 -6px 0 rgba(45,125,111,.4);text-decoration:none}
+#cu u3{background:linear-gradient(to right,var(--co-1),var(--co-3));background-position:bottom;background-size:100% 1px;background-repeat:no-repeat;padding-bottom:1px;text-decoration:none}
+
+/* COULEURS */
+#cu c1{color:var(--co-1)}
+#cu c2{color:var(--co-2)}
+#cu c3{background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#cu c4{color:var(--contrast)}
+
+/* BADGES */
+#cu bg1{display:inline-block;padding:2px 7px;font-weight:600;border-radius:5px;color:white;text-align:center;font-size:9px;letter-spacing:1px;text-transform:uppercase;background:var(--co-1)}
+#cu bg2{display:inline-block;padding:2px 7px;font-weight:600;border-radius:5px;color:white;text-align:center;font-size:9px;letter-spacing:1px;text-transform:uppercase;background:var(--co-2)}
+#cu bg3{display:inline-block;padding:2px 7px;font-weight:600;border-radius:5px;color:white;text-align:center;font-size:9px;letter-spacing:1px;text-transform:uppercase;background:var(--co-gradient)}
+#cu bg4{display:inline-block;padding:2px 7px;font-weight:600;border-radius:5px;color:white;text-align:center;font-size:9px;letter-spacing:1px;text-transform:uppercase;background:var(--textMuted)}
+
+/* TIME (label) */
+#cu time{display:inline-block;padding:2px 8px;font-weight:600;border-radius:5px;color:white;font-size:9px;letter-spacing:1px;text-transform:uppercase;background:rgba(45,125,111,.35);border:1px solid rgba(45,125,111,.45)}
+
+/* MIN */
+#cu min3{display:inline-block;line-height:12px;padding:0 4px 0 2px;text-shadow:1px 1px 0 var(--c1);font-style:italic;color:white;font-size:var(--little-size);text-transform:lowercase;background:var(--co-gradient)}
+
+/* SOUS-TITRES h2 et h3 */
+#cu .sub-2{margin:30px 0 14px;padding-bottom:5px;color:var(--co-1-light);font-family:var(--font-3);text-transform:uppercase;font-size:var(--large-size);line-height:112%;border-bottom:1px solid rgba(45,125,111,.4)}
+#cu .sub-2::before{font-family:arial;color:var(--co-1);text-shadow:0 0 3px var(--co-1);content:"\00002E\0030FB\003002\00272D\0030FB\00002E";margin-right:10px}
+#cu .sub-3{font-family:var(--font-3);font-size:var(--little-size);letter-spacing:.18em;text-transform:uppercase;color:var(--co-2);margin:10px 0 6px}
+
+/* LI avec puce */
+#cu ls{font-family:'Courier New',monospace;letter-spacing:4px}
+#cu b3{display:block;padding-left:14px;position:relative;font-family:var(--font-4);font-size:.82rem;color:var(--contrastLight);margin-bottom:4px}
+#cu b3::before{content:'›';position:absolute;left:0;color:var(--co-1);font-weight:700}
+
+/* BLOCKQUOTES */
+#cu blockquote{border-left:2px solid var(--co-1);padding:14px 20px;margin:18px 0;background:rgba(45,125,111,.05);border-radius:0 10px 10px 0;font-family:var(--font-4);font-size:.88rem;color:var(--contrastLight);line-height:1.8}
+#cu blockquote3{display:block;border-left:2px solid var(--co-3);padding:14px 22px;margin:18px 0;background:rgba(196,84,122,.04);border-radius:0 10px 10px 0;font-family:var(--font-4);font-style:italic;font-size:.92rem;color:var(--contrastLight);line-height:1.9}
+#cu .bq{border-left:3px solid var(--co-1);padding:18px 25px;margin:25px auto;max-width:750px;background:rgba(45,125,111,.04);border-radius:0 12px 12px 0;font-family:var(--font-4);font-style:italic;font-size:.95rem;color:var(--contrastLight);line-height:1.8}
+#cu ba4{font-family:var(--font-4);font-style:normal;color:var(--contrast)}
+#cu ft{display:block;text-align:right;margin-top:6px}
+#cu little-tx{font-size:var(--little-size)}
+
+/* BG-LARGE */
+#cu .bg-large{display:inline-block;font-family:var(--font-3);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--co-1);border-bottom:1px solid rgba(45,125,111,.3);padding-bottom:3px;margin-bottom:10px;margin-top:8px}
+
+/* ═══════════════════════════════════════════
+   GRILLE DIEUX MAJEURS
+   12 cartes cliquables (4x3)
+   ═══════════════════════════════════════════ */
+#cu .gods-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1060px;margin:0 auto 30px}
+#cu .god-card{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;aspect-ratio:3/4;background:rgba(8,14,12,.9);border:1px solid rgba(255,255,255,.06);transition:transform .4s var(--bn),box-shadow .4s var(--ez)}
+#cu .god-card:hover{transform:translateY(-6px);box-shadow:0 14px 40px rgba(45,125,111,.2)}
+/* Image */
+#cu .god-card .gc-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.5) saturate(.7);transition:all .5s}
+#cu .god-card:hover .gc-img{filter:brightness(.65) saturate(.85);transform:scale(1.04)}
+/* Gradient overlay */
+#cu .god-card .gc-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,10,9,.92) 35%,rgba(5,10,9,.2) 100%);transition:background .4s}
+#cu .god-card:hover .gc-overlay{background:linear-gradient(to top,rgba(5,10,9,.95) 40%,rgba(45,125,111,.15) 100%)}
+/* Contenu recto */
+#cu .god-card .gc-front{position:absolute;bottom:0;left:0;right:0;padding:16px 14px;z-index:2}
+#cu .god-card .gc-month{font-family:var(--font-3);font-size:.5rem;letter-spacing:.25em;text-transform:uppercase;color:var(--co-1-light);margin-bottom:3px}
+#cu .god-card .gc-name{font-family:var(--font-3);font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:var(--contrast);line-height:1.2}
+#cu .god-card .gc-domain{font-family:var(--font-4);font-size:.65rem;color:var(--textColor);font-style:italic;margin-top:3px}
+/* Indicateur "cliquer" */
+#cu .god-card .gc-hint{font-family:var(--font);font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-1);opacity:0;margin-top:6px;transition:opacity .3s}
+#cu .god-card:hover .gc-hint{opacity:1}
+/* Bordure lumineuse au hover */
+#cu .god-card::after{content:'';position:absolute;inset:0;border-radius:12px;border:1px solid transparent;transition:border-color .4s}
+#cu .god-card:hover::after{border-color:rgba(45,125,111,.35)}
+
+/* ═══════════════════════════════════════════
+   PANNEAU LATÉRAL DIEU (drawer)
+   ═══════════════════════════════════════════ */
+#cu .god-drawer{position:fixed;top:0;right:-520px;width:500px;height:100vh;z-index:8000;background:rgba(8,12,11,.97);border-left:1px solid rgba(45,125,111,.2);backdrop-filter:blur(20px);transition:right .5s var(--ez);overflow-y:auto;display:flex;flex-direction:column}
+#cu .god-drawer.open{right:0}
+#cu .god-drawer::-webkit-scrollbar{width:3px}
+#cu .god-drawer::-webkit-scrollbar-thumb{background:var(--co-1);border-radius:3px}
+/* Image dieu en header du drawer */
+#cu .gd-img-wrap{width:100%;height:280px;overflow:hidden;position:relative;flex-shrink:0}
+#cu .gd-img-wrap img{width:100%;height:100%;object-fit:cover;filter:brightness(.7) saturate(.85)}
+#cu .gd-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(8,12,11,1) 0%,transparent 60%)}
+/* Header info */
+#cu .gd-header{padding:0 30px 22px;margin-top:-60px;position:relative;z-index:2}
+#cu .gd-month{font-family:var(--font-3);font-size:.55rem;letter-spacing:.28em;text-transform:uppercase;color:var(--co-1-light);margin-bottom:5px}
+#cu .gd-name{font-family:var(--font-3);font-size:1.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--contrast);line-height:1.1}
+#cu .gd-title{font-family:var(--font-4);font-size:.82rem;font-style:italic;color:var(--co-2);margin-top:5px}
+/* Corps du drawer */
+#cu .gd-body{padding:20px 30px 40px;flex:1}
+#cu .gd-desc{font-family:var(--font-4);font-size:.9rem;color:var(--contrastLight);line-height:1.85;margin-bottom:20px;font-style:italic}
+/* Tags symboliques */
+#cu .gd-section{margin-bottom:16px}
+#cu .gd-label{font-family:var(--font-3);font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--co-1);margin-bottom:7px}
+#cu .gd-value{font-family:var(--font-4);font-size:.82rem;color:var(--contrastLight);line-height:1.7}
+/* Séparateur */
+#cu .gd-sep{width:100%;height:1px;background:linear-gradient(to right,rgba(45,125,111,.3),transparent);margin:18px 0}
+/* Close */
+#cu .gd-close{position:absolute;top:18px;right:18px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:white;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.3rem;transition:all .3s;z-index:10}
+#cu .gd-close:hover{background:rgba(45,125,111,.2);border-color:var(--co-1)}
+/* Overlay sombre */
+#cu .god-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:7999;opacity:0;pointer-events:none;transition:opacity .4s}
+#cu .god-overlay.open{opacity:1;pointer-events:all}
+
+/* ═══════════════════════════════════════════
+   NOTE DE PAGINATION PANTHÉON
+   ═══════════════════════════════════════════ */
+#cu .gods-note{text-align:center;font-family:var(--font);font-size:.68rem;letter-spacing:.1em;color:var(--textMuted);margin-bottom:40px}
+
+/* ═══════════════════════════════════════════
+   DIVINITÉS MINEURES
+   Sobre, sans images, en retrait
+   ═══════════════════════════════════════════ */
+#cu .minor-gods{max-width:850px;margin:0 auto 60px}
+#cu .minor-title-section{display:flex;align-items:center;gap:14px;margin-bottom:25px}
+#cu .minor-title-section::before,#cu .minor-title-section::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(45,125,111,.2),transparent)}
+#cu .minor-title-section span{font-family:var(--font-3);font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--textMuted);white-space:nowrap}
+#cu .minor-item{padding:14px 20px;margin-bottom:8px;border-radius:10px;background:rgba(12,18,16,.6);border:1px solid rgba(255,255,255,.04);transition:border-color .3s}
+#cu .minor-item:hover{border-color:rgba(45,125,111,.15)}
+#cu .minor-item .mi-name{font-family:var(--font-3);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--co-1);margin-bottom:4px}
+#cu .minor-item .mi-desc{font-family:var(--font-4);font-size:.82rem;color:var(--textColor);line-height:1.65;font-style:italic}
+#cu .minor-item .mi-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+#cu .minor-item .mi-tag{font-family:var(--font);font-size:.58rem;letter-spacing:.08em;padding:2px 8px;border-radius:4px;background:rgba(45,125,111,.1);border:1px solid rgba(45,125,111,.15);color:var(--textMuted)}
+
+/* ═══════════════════════════════════════════
+   CULTE DE LA MORT
+   ═══════════════════════════════════════════ */
+#cu .death-intro{max-width:780px;margin:0 auto 45px;text-align:center}
+#cu .death-steps{display:flex;flex-direction:column;gap:0;max-width:680px;margin:0 auto 50px;position:relative;padding:10px 0}
+#cu .death-steps::before{content:'';position:absolute;left:22px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--co-1),var(--co-3),var(--co-1),transparent)}
+#cu .death-step{display:flex;gap:20px;align-items:flex-start;padding:16px 0 16px 50px;position:relative}
+#cu .death-step-num{position:absolute;left:8px;top:18px;width:30px;height:30px;border-radius:50%;background:rgba(45,125,111,.2);border:1px solid var(--co-1);display:flex;align-items:center;justify-content:center;font-family:var(--font-3);font-size:.65rem;color:var(--co-1-light)}
+#cu .death-step-content .ds-title{font-family:var(--font-3);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--contrast);margin-bottom:4px}
+#cu .death-step-content .ds-body{font-family:var(--font-4);font-size:.88rem;color:var(--contrastLight);line-height:1.75}
+/* Rites funéraires */
+#cu .rites{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:850px;margin:0 auto 50px}
+#cu .rite{padding:22px 24px;border-radius:14px;background:rgba(12,18,16,.8);border:1px solid rgba(255,255,255,.05);transition:border-color .3s}
+#cu .rite:hover{border-color:rgba(45,125,111,.2)}
+#cu .rite .rt-title{font-family:var(--font-3);font-size:.88rem;letter-spacing:.12em;text-transform:uppercase;color:var(--co-1);margin-bottom:10px}
+#cu .rite .rt-body{font-family:var(--font-4);font-size:.85rem;color:var(--contrastLight);line-height:1.75}
+/* Croyances */
+#cu .beliefs{max-width:750px;margin:0 auto 50px;padding:22px 28px;border-radius:14px;background:rgba(12,18,16,.7);border:1px solid rgba(45,125,111,.12)}
+#cu .beliefs .bel-item{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+#cu .beliefs .bel-item:last-child{border-bottom:none}
+#cu .beliefs .bel-icon{color:var(--co-1);font-size:.9rem;flex-shrink:0;margin-top:3px}
+#cu .beliefs .bel-text{font-family:var(--font-4);font-size:.86rem;color:var(--contrastLight);line-height:1.7}
+
+/* ═══════════════════════════════════════════
+   UNIONS & MARIAGES
+   ═══════════════════════════════════════════ */
+#cu .union-phases{display:flex;flex-direction:column;gap:0;max-width:750px;margin:0 auto 50px}
+#cu .union-phase{padding:25px 30px;border-radius:14px;background:rgba(12,18,16,.8);border:1px solid rgba(255,255,255,.05);margin-bottom:16px;position:relative;overflow:hidden}
+#cu .union-phase::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--co-gradient)}
+#cu .union-phase .up-label{font-family:var(--font-3);font-size:.55rem;letter-spacing:.25em;text-transform:uppercase;color:var(--textMuted);margin-bottom:6px}
+#cu .union-phase .up-title{font-family:var(--font-3);font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;color:var(--contrast);margin-bottom:10px}
+#cu .union-phase .up-body{font-family:var(--font-4);font-size:.88rem;color:var(--contrastLight);line-height:1.8}
+/* Coutumes par race */
+#cu .race-customs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:850px;margin:0 auto 50px}
+#cu .race-custom{padding:16px 18px;border-radius:10px;background:rgba(12,18,16,.7);border:1px solid rgba(255,255,255,.05);transition:border-color .3s}
+#cu .race-custom:hover{border-color:rgba(196,84,122,.2)}
+#cu .race-custom .rc-race{font-family:var(--font-3);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--co-3);margin-bottom:5px}
+#cu .race-custom .rc-rite{font-family:var(--font-3);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--contrast);margin-bottom:6px}
+#cu .race-custom .rc-body{font-family:var(--font-4);font-size:.8rem;color:var(--contrastLight);line-height:1.65}
+
+/* ═══════════════════════════════════════════
+   FÊTES & CÉLÉBRATIONS
+   ═══════════════════════════════════════════ */
+#cu .fete-item{max-width:900px;margin:0 auto 60px}
+#cu .fete-header{margin-bottom:18px}
+#cu .fete-tag{display:inline-block;font-family:var(--font);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;padding:3px 10px;border-radius:5px;background:rgba(45,125,111,.15);border:1px solid rgba(45,125,111,.2);color:var(--co-1-light);margin-bottom:10px}
+#cu .fete-title{font-family:var(--font-3);font-size:1.3rem;letter-spacing:.1em;text-transform:uppercase;color:var(--contrast)}
+#cu .fete-deity{font-family:var(--font-4);font-size:.8rem;font-style:italic;color:var(--textMuted);margin-top:4px}
+/* Moodboard 3 images */
+#cu .moodboard{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;border-radius:12px;overflow:hidden;margin-bottom:20px;height:180px}
+#cu .moodboard img{width:100%;height:100%;object-fit:cover;filter:brightness(.75) saturate(.85);transition:all .4s}
+#cu .moodboard img:hover{filter:brightness(.9) saturate(1);transform:scale(1.02)}
+/* Contenu fête */
+#cu .fete-body{font-family:var(--font-4);font-size:.9rem;color:var(--contrastLight);line-height:1.85;margin-bottom:18px}
+/* Ambiance blockquote */
+#cu .fete-ambiance{border-left:2px solid var(--co-2);padding:14px 22px;margin:18px 0;background:rgba(74,143,168,.04);border-radius:0 10px 10px 0;font-family:var(--font-4);font-style:italic;font-size:.88rem;color:var(--contrastLight);line-height:1.8}
+#cu .fete-ambiance::before{content:'Décors & Ambiance';display:block;font-family:var(--font-3);font-size:.55rem;letter-spacing:.25em;text-transform:uppercase;color:var(--co-2);margin-bottom:8px;font-style:normal}
+/* Grille coutumes/nourriture */
+#cu .fete-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+#cu .fete-col{padding:16px 18px;border-radius:10px;background:rgba(12,18,16,.7);border:1px solid rgba(255,255,255,.05)}
+#cu .fete-col-title{font-family:var(--font-3);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--co-1);margin-bottom:10px}
+/* Séparateur entre fêtes */
+#cu .fete-sep{width:200px;height:1px;background:linear-gradient(to right,transparent,rgba(45,125,111,.25),transparent);margin:0 auto 55px}
+#cu .list-label{font-family:var(--font-3);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--co-2);display:block;margin:12px 0 6px}
+
+/* ═══════════════════════════════════════════
+   FOOTER NAV
+   ═══════════════════════════════════════════ */
+#cu .rf{display:flex;justify-content:space-between;align-items:center;padding:40px 0;border-top:1px solid rgba(255,255,255,.04);margin-top:40px}
+#cu .fl{display:flex;align-items:center;gap:12px;cursor:pointer;padding:14px 22px;border-radius:12px;background:rgba(12,18,16,.7);border:1px solid rgba(255,255,255,.06);transition:all .3s;max-width:45%}
+#cu .fl:hover{border-color:rgba(45,125,111,.2);background:rgba(45,125,111,.04)}
+#cu .fl.nx{flex-direction:row-reverse;text-align:right}
+#cu .fl .fll{font-family:var(--font);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--textMuted)}
+#cu .fl .fln{font-family:var(--font-3);font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--contrast)}
+#cu .fl svg{width:20px;height:20px;color:var(--co-1);flex-shrink:0}
+
+/* ═══════════════════════════════════════════
+   LIGHTBOX
+   ═══════════════════════════════════════════ */
+#cu .vlb{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.92);backdrop-filter:blur(20px);display:none;align-items:center;justify-content:center;cursor:pointer}
+#cu .vlb.open{display:flex}
+#cu .vlb img{max-width:90%;max-height:85vh;object-fit:contain;border-radius:8px}
+#cu .vlb .lbc{position:absolute;top:25px;right:30px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:white;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.5rem;transition:all .3s}
+#cu .vlb .lbc:hover{background:rgba(45,125,111,.2);border-color:var(--co-1)}
+
+/* Extension styles texte dans sous-sections */
+#cu .gd-desc bb3,#cu .gd-value bb3,#cu .up-body bb3,#cu .fete-body bb3,#cu .ds-body bb3,#cu .rt-body bb3,#cu .bel-text bb3,#cu .rc-body bb3{font-weight:600;background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#cu .gd-desc i3,#cu .gd-value i3,#cu .up-body i3,#cu .fete-body i3,#cu .ds-body i3,#cu .rt-body i3{font-style:italic;font-family:var(--font-4);background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#cu .gd-desc u3,#cu .gd-value u3,#cu .up-body u3,#cu .fete-body u3{background:linear-gradient(to right,var(--co-1),var(--co-3));background-position:bottom;background-size:100% 1px;background-repeat:no-repeat;padding-bottom:1px;text-decoration:none}
+#cu .gd-desc u2,#cu .fete-body u2,#cu .up-body u2{color:var(--contrast);box-shadow:inset 0 -6px 0 rgba(45,125,111,.35);text-decoration:none}
+#cu .gd-desc bb7,#cu .fete-body bb7{font-weight:600;font-family:var(--font-3);color:var(--contrast)}
+#cu .gd-desc i2,#cu .fete-body i2,#cu .up-body i2{font-style:italic;font-family:var(--font-4);color:var(--co-2)}
+#cu .gd-desc i4,#cu .fete-body i4{font-style:italic;font-family:var(--font-4);color:var(--contrast)}
+#cu .fete-body c3,#cu .up-body c3{background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#cu .fete-body bb3,#cu .up-body bb3{font-weight:600;background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#cu .fete-body time,#cu .up-body time,#cu .gd-value time{display:inline-block;padding:2px 8px;font-weight:600;border-radius:5px;color:white;font-size:9px;letter-spacing:1px;text-transform:uppercase;background:rgba(45,125,111,.35);border:1px solid rgba(45,125,111,.45)}
+#cu .fete-ambiance i3,#cu .fete-ambiance bb3{font-style:inherit}
+#cu .fete-ambiance i3{background:var(--co-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#cu .fete-ambiance b{color:var(--contrast);font-weight:600}
+#cu .fete-ambiance u{background:linear-gradient(to right,var(--co-1),var(--co-3));background-position:bottom;background-size:100% 1px;background-repeat:no-repeat;padding-bottom:1px;text-decoration:none}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════ */
+@media(max-width:960px){
+  #cu .gods-grid{grid-template-columns:repeat(3,1fr)}
+  #cu .god-drawer{width:100%;right:-100%}
+  #cu .rht{padding:0 25px 32px}
+  #cu .rbdy{padding:35px 20px 60px}
+  #cu .rites{grid-template-columns:1fr}
+  #cu .race-customs{grid-template-columns:1fr}
+  #cu .fete-grid{grid-template-columns:1fr}
+  #cu .moodboard{grid-template-columns:1fr 1fr;height:auto}
+  #cu .moodboard img:last-child{display:none}
+  #cu .pts{grid-template-columns:1fr 1fr}
+  #cu .rf{flex-direction:column;gap:15px}
+  #cu .fl{max-width:100%;width:100%}
+}
+@media(max-width:600px){
+  #cu .gods-grid{grid-template-columns:repeat(2,1fr)}
+  #cu .pts{grid-template-columns:1fr}
+}
