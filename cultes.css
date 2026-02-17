@@ -67,7 +67,7 @@ a{text-decoration:none;color:inherit}
    ═══════════════════════════════════════════ */
 #cu .abg{
   position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:url('WALLPAPER_URL_ICI') center/cover no-repeat fixed;
+  background:url('https://i.postimg.cc/jq3Dbs27/Chat-GPT-Image-17-fevr-2026-22-38-54.png') center/cover no-repeat fixed;
 }
 #cu .abg::before{
   content:'';position:fixed;inset:0;z-index:1;pointer-events:none;
