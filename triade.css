@@ -365,7 +365,7 @@ a{text-decoration:none;color:inherit}
 
 /* Forbidden list */
 #tr .forbidden{max-width:700px;margin:0 auto 60px;padding:22px 28px;border-radius:14px;background:rgba(15,17,20,.7);border:1px solid rgba(140,0,12,.15)}
-#tr .forbidden .forb-title{font-family:var(--font-3);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-1);margin-bottom:14px;text-align:center}
+#tr .forbidden .forb-title{font-family:var(--font-3);font-size:.98rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-2);margin-bottom:14px;text-align:center}
 #tr .forbidden .forb-list{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 20px}
 #tr .forbidden .forb-list li{font-family:var(--font);font-size:.8rem;color:var(--contrastLight);padding:4px 0 4px 20px;position:relative}
 #tr .forbidden .forb-list li::before{content:'✕';position:absolute;left:0;color:var(--co-1);font-size:.7rem;font-weight:700}
