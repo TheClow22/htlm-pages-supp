@@ -330,7 +330,7 @@ a{text-decoration:none;color:inherit}
 #cu .fete-deity{font-family:var(--font-4);font-size:.9rem;font-style:italic;color:var(--co-3);margin-top:4px}
 /* 3 vignettes de taille égale, focus centre */
 #cu .moodboard{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;border-radius:12px;overflow:hidden;margin-bottom:20px;height:200px}
-#cu .moodboard img{width:100%;height:100%;object-fit:cover;object-position:center center;filter:brightness(.78) saturate(.88);transition:all .45s var(--ez)}
+#cu .moodboard img{width:100%;height:60%;object-fit:cover;object-position:center center;filter:brightness(.75) saturate(.88);transition:all .45s var(--ez)}
 #cu .moodboard img:hover{filter:brightness(.95) saturate(1.05);transform:scale(1.04)}
 #cu .fete-body{font-family:var(--font-4);font-size:.9rem;color:var(--contrastLight);line-height:1.85;margin-bottom:18px}
 #cu .fete-ambiance{border-left:2px solid var(--co-2);padding:14px 22px;margin:18px 0;background:rgba(91,187,194,.04);border-radius:0 10px 10px 0;font-family:var(--font-4);font-style:italic;font-size:.88rem;color:var(--contrastLight);line-height:1.8}
