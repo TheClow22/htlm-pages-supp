@@ -134,8 +134,8 @@ a{text-decoration:none;color:inherit}
 #cu .pt:hover .pticon::after{opacity:1}
 #cu .pt .pi{padding:20px 22px 24px;text-align:left;flex:1;display:flex;flex-direction:column;gap:6px}
 #cu .pt .pl{font-family:var(--font-3);font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--co-1)}
-#cu .pt .pn{font-family:var(--font-3);font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;color:var(--contrast);line-height:1.2}
-#cu .pt .pc{font-family:var(--font-4);font-size:.78rem;color:var(--textMuted);font-style:italic;margin-top:2px}
+#cu .pt .pn{font-family:var(--font-3);font-size:1.5rem;letter-spacing:.08em;text-transform:uppercase;color:var(--contrast);line-height:1.2}
+#cu .pt .pc{font-family:var(--font-4);font-size:.78rem;color:var(--co-2);font-style:italic;margin-top:2px}
 
 /* ═══════════════════════════════════════════
    CATEGORY HEADERS — gradient aux bonnes couleurs
@@ -233,7 +233,7 @@ a{text-decoration:none;color:inherit}
 #cu .god-card .gc-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(9,8,13,.78) 0%,rgba(9,8,13,.1) 38%,transparent 58%);transition:background .4s}
 #cu .god-card:hover .gc-overlay{background:linear-gradient(to top,rgba(9,8,13,.82) 0%,rgba(9,8,13,.05) 38%,rgba(224,76,185,.06) 100%)}
 #cu .god-card .gc-front{position:absolute;bottom:0;left:0;right:0;padding:14px 13px;z-index:2}
-#cu .god-card .gc-month{font-family:var(--font-3);font-size:.5rem;letter-spacing:.95em;text-transform:uppercase;color:var(--co-1-light);margin-bottom:3px}
+#cu .god-card .gc-month{font-family:var(--font-4);font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-3-light);margin-bottom:3px}
 #cu .god-card .gc-name{font-family:var(--font-3);font-size:1.5rem;letter-spacing:.08em;text-transform:uppercase;color:var(--contrast);line-height:1.2}
 #cu .god-card .gc-domain{font-family:var(--font-4);font-size:.65rem;color:var(--contrastLight);font-style:italic;margin-top:3px}
 #cu .god-card .gc-hint{font-family:var(--font);font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-1);opacity:0;margin-top:6px;transition:opacity .3s}
@@ -296,7 +296,7 @@ a{text-decoration:none;color:inherit}
 #cu .rites{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:850px;margin:0 auto 50px}
 #cu .rite{padding:22px 24px;border-radius:14px;background:rgba(9,8,13,.55);border:1px solid rgba(255,255,255,.05);transition:border-color .3s}
 #cu .rite:hover{border-color:rgba(224,76,185,.2)}
-#cu .rite .rt-title{font-family:var(--font-3);font-size:.88rem;letter-spacing:.12em;text-transform:uppercase;color:var(--co-1);margin-bottom:10px}
+#cu .rite .rt-title{font-family:var(--font-3);font-size:1.3rem;letter-spacing:.12em;text-transform:uppercase;color:var(--co-1);margin-bottom:10px}
 #cu .rite .rt-body{font-family:var(--font-4);font-size:.85rem;color:var(--contrastLight);line-height:1.75}
 #cu .beliefs{max-width:750px;margin:0 auto 50px;padding:22px 28px;border-radius:14px;background:rgba(9,8,13,.5);border:1px solid rgba(224,76,185,.12)}
 #cu .beliefs .bel-item{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.04)}
@@ -327,7 +327,7 @@ a{text-decoration:none;color:inherit}
 #cu .fete-header{margin-bottom:18px}
 #cu .fete-tag{display:inline-block;font-family:var(--font);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;padding:3px 10px;border-radius:5px;background:rgba(224,76,185,.12);border:1px solid rgba(224,76,185,.2);color:var(--co-1-light);margin-bottom:10px}
 #cu .fete-title{font-family:var(--font-3);font-size:1.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--contrast)}
-#cu .fete-deity{font-family:var(--font-4);font-size:.9rem;font-style:italic;color:var(--co-2);margin-top:4px}
+#cu .fete-deity{font-family:var(--font-4);font-size:.9rem;font-style:italic;color:var(--co-3);margin-top:4px}
 /* 3 vignettes de taille égale, focus centre */
 #cu .moodboard{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;border-radius:12px;overflow:hidden;margin-bottom:20px;height:200px}
 #cu .moodboard img{width:100%;height:100%;object-fit:cover;object-position:center center;filter:brightness(.78) saturate(.88);transition:all .45s var(--ez)}
