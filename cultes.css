@@ -291,7 +291,7 @@ a{text-decoration:none;color:inherit}
 #cu .death-steps::before{content:'';position:absolute;left:22px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--co-1),var(--co-3),var(--co-1),transparent)}
 #cu .death-step{display:flex;gap:20px;align-items:flex-start;padding:16px 0 16px 50px;position:relative}
 #cu .death-step-num{position:absolute;left:8px;top:18px;width:30px;height:30px;border-radius:50%;background:rgba(224,76,185,.15);border:1px solid var(--co-1);display:flex;align-items:center;justify-content:center;font-family:var(--font-3);font-size:.65rem;color:var(--co-1-light)}
-#cu .death-step-content .ds-title{font-family:var(--font-3);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--contrast);margin-bottom:4px}
+#cu .death-step-content .ds-title{font-family:var(--font-3);font-size:.92rem;letter-spacing:.12em;text-transform:uppercase;color:var(--co-3);margin-bottom:4px}
 #cu .death-step-content .ds-body{font-family:var(--font-4);font-size:.88rem;color:var(--contrastLight);line-height:1.75}
 #cu .rites{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:850px;margin:0 auto 50px}
 #cu .rite{padding:22px 24px;border-radius:14px;background:rgba(9,8,13,.55);border:1px solid rgba(255,255,255,.05);transition:border-color .3s}
@@ -311,13 +311,13 @@ a{text-decoration:none;color:inherit}
 #cu .union-phase{padding:25px 30px;border-radius:14px;background:rgba(9,8,13,.55);border:1px solid rgba(255,255,255,.05);margin-bottom:16px;position:relative;overflow:hidden}
 #cu .union-phase::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--co-gradient)}
 #cu .union-phase .up-label{font-family:var(--font-3);font-size:.55rem;letter-spacing:.25em;text-transform:uppercase;color:var(--textMuted);margin-bottom:6px}
-#cu .union-phase .up-title{font-family:var(--font-3);font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;color:var(--contrast);margin-bottom:10px}
+#cu .union-phase .up-title{font-family:var(--font-3);font-size:1.15rem;letter-spacing:.08em;text-transform:uppercase;color:var(--contrast);margin-bottom:10px}
 #cu .union-phase .up-body{font-family:var(--font-4);font-size:.88rem;color:var(--contrastLight);line-height:1.8}
 #cu .race-customs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:850px;margin:0 auto 50px}
 #cu .race-custom{padding:16px 18px;border-radius:10px;background:rgba(9,8,13,.5);border:1px solid rgba(255,255,255,.05);transition:border-color .3s}
 #cu .race-custom:hover{border-color:rgba(91,194,149,.2)}
-#cu .race-custom .rc-race{font-family:var(--font-3);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--co-3);margin-bottom:5px}
-#cu .race-custom .rc-rite{font-family:var(--font-3);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--contrast);margin-bottom:6px}
+#cu .race-custom .rc-race{font-family:var(--font-3);font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:var(--co-3);margin-bottom:5px}
+#cu .race-custom .rc-rite{font-family:var(--font-3);font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--co-1);margin-bottom:6px}
 #cu .race-custom .rc-body{font-family:var(--font-4);font-size:.8rem;color:var(--contrastLight);line-height:1.65}
 
 /* ═══════════════════════════════════════════
@@ -326,18 +326,18 @@ a{text-decoration:none;color:inherit}
 #cu .fete-item{max-width:900px;margin:0 auto 60px}
 #cu .fete-header{margin-bottom:18px}
 #cu .fete-tag{display:inline-block;font-family:var(--font);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;padding:3px 10px;border-radius:5px;background:rgba(224,76,185,.12);border:1px solid rgba(224,76,185,.2);color:var(--co-1-light);margin-bottom:10px}
-#cu .fete-title{font-family:var(--font-3);font-size:1.3rem;letter-spacing:.1em;text-transform:uppercase;color:var(--contrast)}
-#cu .fete-deity{font-family:var(--font-4);font-size:.8rem;font-style:italic;color:var(--textMuted);margin-top:4px}
+#cu .fete-title{font-family:var(--font-3);font-size:1.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--contrast)}
+#cu .fete-deity{font-family:var(--font-4);font-size:.9rem;font-style:italic;color:var(--co-2);margin-top:4px}
 /* 3 vignettes de taille égale, focus centre */
 #cu .moodboard{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;border-radius:12px;overflow:hidden;margin-bottom:20px;height:200px}
 #cu .moodboard img{width:100%;height:100%;object-fit:cover;object-position:center center;filter:brightness(.78) saturate(.88);transition:all .45s var(--ez)}
 #cu .moodboard img:hover{filter:brightness(.95) saturate(1.05);transform:scale(1.04)}
 #cu .fete-body{font-family:var(--font-4);font-size:.9rem;color:var(--contrastLight);line-height:1.85;margin-bottom:18px}
 #cu .fete-ambiance{border-left:2px solid var(--co-2);padding:14px 22px;margin:18px 0;background:rgba(91,187,194,.04);border-radius:0 10px 10px 0;font-family:var(--font-4);font-style:italic;font-size:.88rem;color:var(--contrastLight);line-height:1.8}
-#cu .fete-ambiance::before{content:'Décors & Ambiance';display:block;font-family:var(--font-3);font-size:.55rem;letter-spacing:.25em;text-transform:uppercase;color:var(--co-2);margin-bottom:8px;font-style:normal}
+#cu .fete-ambiance::before{content:'Décors & Ambiance';display:block;font-family:var(--font-3);font-size:.95rem;letter-spacing:.25em;text-transform:uppercase;color:var(--co-2);margin-bottom:8px;font-style:normal}
 #cu .fete-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
 #cu .fete-col{padding:16px 18px;border-radius:10px;background:rgba(9,8,13,.5);border:1px solid rgba(255,255,255,.05)}
-#cu .fete-col-title{font-family:var(--font-3);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--co-1);margin-bottom:10px}
+#cu .fete-col-title{font-family:var(--font-3);font-size:.86rem;letter-spacing:.2em;text-transform:uppercase;color:var(--co-1);margin-bottom:10px}
 #cu .fete-sep{width:200px;height:1px;background:linear-gradient(to right,transparent,rgba(224,76,185,.25),transparent);margin:0 auto 55px}
 #cu .list-label{font-family:var(--font-3);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--co-2);display:block;margin:12px 0 6px}
 
