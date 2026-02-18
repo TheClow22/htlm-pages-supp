@@ -233,8 +233,8 @@ a{text-decoration:none;color:inherit}
 #cu .god-card .gc-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(9,8,13,.78) 0%,rgba(9,8,13,.1) 38%,transparent 58%);transition:background .4s}
 #cu .god-card:hover .gc-overlay{background:linear-gradient(to top,rgba(9,8,13,.82) 0%,rgba(9,8,13,.05) 38%,rgba(224,76,185,.06) 100%)}
 #cu .god-card .gc-front{position:absolute;bottom:0;left:0;right:0;padding:14px 13px;z-index:2}
-#cu .god-card .gc-month{font-family:var(--font-3);font-size:.5rem;letter-spacing:.25em;text-transform:uppercase;color:var(--co-1-light);margin-bottom:3px}
-#cu .god-card .gc-name{font-family:var(--font-3);font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:var(--contrast);line-height:1.2}
+#cu .god-card .gc-month{font-family:var(--font-3);font-size:.5rem;letter-spacing:.95em;text-transform:uppercase;color:var(--co-1-light);margin-bottom:3px}
+#cu .god-card .gc-name{font-family:var(--font-3);font-size:1.5rem;letter-spacing:.08em;text-transform:uppercase;color:var(--contrast);line-height:1.2}
 #cu .god-card .gc-domain{font-family:var(--font-4);font-size:.65rem;color:var(--contrastLight);font-style:italic;margin-top:3px}
 #cu .god-card .gc-hint{font-family:var(--font);font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;color:var(--co-1);opacity:0;margin-top:6px;transition:opacity .3s}
 #cu .god-card:hover .gc-hint{opacity:1}
@@ -252,13 +252,13 @@ a{text-decoration:none;color:inherit}
 #cu .gd-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:brightness(.7) saturate(.85)}
 #cu .gd-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(9,8,13,1) 0%,transparent 60%)}
 #cu .gd-header{padding:0 30px 22px;margin-top:-60px;position:relative;z-index:2}
-#cu .gd-month{font-family:var(--font-3);font-size:.55rem;letter-spacing:.28em;text-transform:uppercase;color:var(--co-1-light);margin-bottom:5px}
-#cu .gd-name{font-family:var(--font-3);font-size:1.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--contrast);line-height:1.1}
+#cu .gd-month{font-family:var(--font-3);font-size:.95rem;letter-spacing:.28em;text-transform:uppercase;color:var(--co-1-light);margin-bottom:5px}
+#cu .gd-name{font-family:var(--font-3);font-size:2.2rem;letter-spacing:.1em;text-transform:uppercase;color:var(--contrast);line-height:1.1}
 #cu .gd-title{font-family:var(--font-4);font-size:.82rem;font-style:italic;color:var(--co-2);margin-top:5px}
 #cu .gd-body{padding:20px 30px 40px;flex:1}
 #cu .gd-desc{font-family:var(--font-4);font-size:.9rem;color:var(--contrastLight);line-height:1.85;margin-bottom:20px;font-style:italic}
 #cu .gd-section{margin-bottom:16px}
-#cu .gd-label{font-family:var(--font-3);font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--co-1);margin-bottom:7px}
+#cu .gd-label{font-family:var(--font-3);font-size:.85rem;letter-spacing:.22em;text-transform:uppercase;color:var(--co-1);margin-bottom:7px}
 #cu .gd-value{font-family:var(--font-4);font-size:.82rem;color:var(--contrastLight);line-height:1.7}
 #cu .gd-sep{width:100%;height:1px;background:linear-gradient(to right,rgba(224,76,185,.3),transparent);margin:18px 0}
 #cu .gd-close{position:absolute;top:18px;right:18px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:white;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.3rem;transition:all .3s;z-index:10}
@@ -275,13 +275,13 @@ a{text-decoration:none;color:inherit}
 #cu .minor-gods{max-width:850px;margin:0 auto 60px}
 #cu .minor-title-section{display:flex;align-items:center;gap:14px;margin-bottom:25px}
 #cu .minor-title-section::before,#cu .minor-title-section::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(224,76,185,.2),transparent)}
-#cu .minor-title-section span{font-family:var(--font-3);font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--textMuted);white-space:nowrap}
+#cu .minor-title-section span{font-family:var(--font-3);font-size:.86rem;letter-spacing:.28em;text-transform:uppercase;color:var(--co-2);white-space:nowrap}
 #cu .minor-item{padding:14px 20px;margin-bottom:8px;border-radius:10px;background:rgba(9,8,13,.5);border:1px solid rgba(255,255,255,.04);transition:border-color .3s}
 #cu .minor-item:hover{border-color:rgba(224,76,185,.15)}
 #cu .minor-item .mi-name{font-family:var(--font-3);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--co-1);margin-bottom:4px}
 #cu .minor-item .mi-desc{font-family:var(--font-4);font-size:.82rem;color:var(--textColor);line-height:1.65;font-style:italic}
 #cu .minor-item .mi-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-#cu .minor-item .mi-tag{font-family:var(--font);font-size:.58rem;letter-spacing:.08em;padding:2px 8px;border-radius:4px;background:rgba(224,76,185,.08);border:1px solid rgba(224,76,185,.14);color:var(--textMuted)}
+#cu .minor-item .mi-tag{font-family:var(--font);font-size:.70rem;letter-spacing:.08em;padding:2px 8px;border-radius:4px;background:rgba(224,76,185,.08);border:1px solid rgba(224,76,185,.14);color:var(--co-3)}
 
 /* ═══════════════════════════════════════════
    CULTE DE LA MORT
