@@ -1,72 +1,76 @@
-/* ═══════════════════════════════════════════════════════════
-   NAVIGATION GLOBALE - Système inter-pages HTML
-   ═══════════════════════════════════════════════════════════
-   
-   Variables adaptatives par page :
-   - Carte : bleu/cyan
-   - Races : violet/rose
-   - Triade : rouge/noir
-   - Cultes : or/rose pâle
-   ══════════════════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════
+   MENU DE NAVIGATION ZEPHYRA
+   Design adaptatif selon la page (data-page)
+   ═══════════════════════════════════════════ */
 
-/* ─────────────────────────────────────────────────────────
-   VARIABLES PAR PAGE
-   ───────────────────────────────────────────────────────── */
+/* ─────────────────────────────────────────
+   VARIABLES COULEURS PAR PAGE
+   ───────────────────────────────────────── */
 
-:root {
-  --nav-primary: #3b82f6;
-  --nav-primary-dark: #2563eb;
-  --nav-primary-light: #60a5fa;
-  --nav-bg: #0f0f1a;
-  --nav-surface: #1a1a2e;
-  --nav-border: #2a2a4a;
+/* Page Triade (rouge/violet) */
+#globalNav[data-page="triade"] {
+  --nav-co-1: #8C000C;
+  --nav-co-2: #B53D2A;
+  --nav-co-3: #480896;
+  --nav-gradient: linear-gradient(45deg, #480896, #8C000C, #480896);
+  --nav-glow: rgba(140, 0, 12, 0.4);
+}
+
+/* Page Cultes (rose/turquoise/vert) */
+#globalNav[data-page="cultes"] {
+  --nav-co-1: #E04CB9;
+  --nav-co-2: #5BBBC2;
+  --nav-co-3: #5BC295;
+  --nav-gradient: linear-gradient(45deg, #E04CB9, #5BC295, #E04CB9);
+  --nav-glow: rgba(224, 76, 185, 0.4);
+}
+
+/* Page Carte (or/rouge/rose) */
+#globalNav[data-page="carte"] {
+  --nav-co-1: #C48121;
+  --nav-co-2: #8F0B01;
+  --nav-co-3: #8F0143;
+  --nav-gradient: linear-gradient(to right, #C48121, #8F0143);
+  --nav-glow: rgba(196, 129, 33, 0.4);
+}
+
+/* Page Races (à définir selon votre page) */
+#globalNav[data-page="races"] {
+  --nav-co-1: #8C000C;
+  --nav-co-2: #B53D2A;
+  --nav-co-3: #480896;
+  --nav-gradient: linear-gradient(45deg, #480896, #8C000C, #480896);
+  --nav-glow: rgba(140, 0, 12, 0.4);
+}
+
+/* Couleurs communes */
+#globalNav {
+  --nav-bg: rgba(10, 12, 14, 0.95);
+  --nav-overlay: rgba(10, 12, 14, 0.85);
+  --nav-border: rgba(255, 255, 255, 0.08);
   --nav-text: #e8e6f0;
-  --nav-text-muted: #9995a8;
+  --nav-text-muted: #8a878e;
+  --nav-hover-bg: rgba(255, 255, 255, 0.03);
 }
 
-/* Carte de Zephyra */
-[data-page="carte"] {
-  --nav-primary: #3b82f6;
-  --nav-primary-dark: #2563eb;
-  --nav-primary-light: #60a5fa;
-}
 
-/* Les Races Vanes */
-[data-page="races"] {
-  --nav-primary: #8F0143;
-  --nav-primary-dark: #6b0132;
-  --nav-primary-light: #b8015a;
-}
-
-/* La Triade */
-[data-page="triade"] {
-  --nav-primary: #990511;
-  --nav-primary-dark: #6b0308;
-  --nav-primary-light: #c40716;
-}
-
-/* Cultes & Festivités */
-[data-page="cultes"] {
-  --nav-primary: #C48121;
-  --nav-primary-dark: #8F5f18;
-  --nav-primary-light: #d69a3f;
-}
-
-/* ─────────────────────────────────────────────────────────
-   BOUTON TOGGLE (icône menu)
-   ───────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════
+   BOUTON TOGGLE (hamburger)
+   ═══════════════════════════════════════════ */
 
 .nav-toggle {
   position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 9998;
-  width: 48px;
-  height: 48px;
-  border: none;
-  border-radius: 12px;
-  background: var(--nav-surface);
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--nav-border);
+  color: var(--nav-text);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -76,36 +80,32 @@
 }
 
 .nav-toggle:hover {
-  background: var(--nav-primary);
-  border-color: var(--nav-primary);
+  background: var(--nav-co-1);
+  border-color: var(--nav-co-1);
+  box-shadow: 0 0 20px var(--nav-glow);
   transform: scale(1.05);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
 }
 
 .nav-toggle svg {
-  width: 24px;
-  height: 24px;
-  stroke: var(--nav-text);
-  transition: stroke 0.3s;
+  width: 20px;
+  height: 20px;
 }
 
-.nav-toggle:hover svg {
-  stroke: #fff;
-}
 
-/* ─────────────────────────────────────────────────────────
+/* ═══════════════════════════════════════════
    OVERLAY
-   ───────────────────────────────────────────────────────── */
+   ═══════════════════════════════════════════ */
 
 .nav-overlay {
   position: fixed;
   inset: 0;
-  z-index: 9998;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 9997;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-overlay.active {
@@ -113,34 +113,36 @@
   pointer-events: all;
 }
 
-/* ─────────────────────────────────────────────────────────
+
+/* ═══════════════════════════════════════════
    DRAWER (panneau latéral)
-   ───────────────────────────────────────────────────────── */
+   ═══════════════════════════════════════════ */
 
 .nav-drawer {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 320px;
+  left: -380px;
+  width: 360px;
   max-width: 85vw;
   height: 100vh;
-  z-index: 9999;
+  z-index: 9998;
   background: var(--nav-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-right: 1px solid var(--nav-border);
   box-shadow: 10px 0 40px rgba(0, 0, 0, 0.5);
-  transform: translateX(-100%);
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
   overflow-x: hidden;
+  transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-drawer.open {
-  transform: translateX(0);
+  left: 0;
 }
 
-/* Scrollbar personnalisée */
+/* Scrollbar */
 .nav-drawer::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 
 .nav-drawer::-webkit-scrollbar-track {
@@ -153,206 +155,285 @@
 }
 
 .nav-drawer::-webkit-scrollbar-thumb:hover {
-  background: var(--nav-primary);
+  background: var(--nav-co-1);
 }
 
-/* ─────────────────────────────────────────────────────────
-   BOUTON FERMER
-   ───────────────────────────────────────────────────────── */
+/* Grain texture overlay */
+.nav-drawer::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px;
+}
+
+
+/* ═══════════════════════════════════════════
+   BOUTON FERMETURE
+   ═══════════════════════════════════════════ */
 
 .nav-close {
-  position: absolute;
+  position: sticky;
   top: 16px;
   right: 16px;
+  margin-left: auto;
+  display: block;
   width: 36px;
   height: 36px;
-  border: none;
-  border-radius: 8px;
-  background: var(--nav-surface);
+  border-radius: 50%;
+  background: var(--nav-hover-bg);
   border: 1px solid var(--nav-border);
+  color: var(--nav-text-muted);
   cursor: pointer;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s;
+  transition: all 0.3s;
+  z-index: 10;
+  margin-bottom: 20px;
+  margin-right: 16px;
 }
 
 .nav-close:hover {
-  background: var(--nav-primary);
-  border-color: var(--nav-primary);
+  background: var(--nav-co-1);
+  border-color: var(--nav-co-1);
+  color: white;
+  box-shadow: 0 0 15px var(--nav-glow);
 }
 
 .nav-close svg {
-  width: 20px;
-  height: 20px;
-  stroke: var(--nav-text);
-  transition: stroke 0.2s;
+  width: 18px;
+  height: 18px;
 }
 
-.nav-close:hover svg {
-  stroke: #fff;
-}
 
-/* ─────────────────────────────────────────────────────────
-   CONTENU DU MENU
-   ───────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════
+   CONTENU NAVIGATION
+   ═══════════════════════════════════════════ */
 
 .nav-content {
-  padding: 70px 20px 30px 20px;
+  padding: 0 24px 40px 24px;
 }
 
-/* Lien Accueil */
+
+/* ═══════════════════════════════════════════
+   LIEN ACCUEIL
+   ═══════════════════════════════════════════ */
+
 .nav-home {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 14px 16px;
-  margin-bottom: 20px;
-  background: var(--nav-surface);
-  border: 1px solid var(--nav-border);
+  padding: 14px 18px;
+  margin-bottom: 30px;
   border-radius: 10px;
+  background: var(--nav-hover-bg);
+  border: 1px solid var(--nav-border);
   color: var(--nav-text);
-  text-decoration: none;
-  font-size: 0.95rem;
+  font-family: 'Raleway', 'Inter', sans-serif;
+  font-size: 0.85rem;
   font-weight: 500;
-  transition: all 0.2s;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-home::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--nav-gradient);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-home:hover::before {
+  opacity: 0.1;
 }
 
 .nav-home:hover {
-  background: var(--nav-primary);
-  border-color: var(--nav-primary);
-  color: #fff;
+  border-color: var(--nav-co-1);
   transform: translateX(4px);
+  box-shadow: 0 4px 15px var(--nav-glow);
 }
 
 .nav-home svg {
-  width: 20px;
-  height: 20px;
-  stroke: currentColor;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
+  color: var(--nav-co-1);
+  position: relative;
+  z-index: 1;
 }
 
-/* Section */
+.nav-home span {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ═══════════════════════════════════════════
+   SECTIONS
+   ═══════════════════════════════════════════ */
+
 .nav-section {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .nav-section-title {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 12px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  padding: 0 4px;
+  font-family: 'Glamour', 'Cinzel', serif;
   font-size: 0.7rem;
-  font-weight: 700;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--nav-primary);
+  color: var(--nav-text-muted);
+  font-weight: 600;
 }
 
 .nav-section-title svg {
-  width: 16px;
-  height: 16px;
-  stroke: currentColor;
-  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
 }
 
-/* Liens de navigation */
+
+/* ═══════════════════════════════════════════
+   LIENS DE NAVIGATION
+   ═══════════════════════════════════════════ */
+
 .nav-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
   padding: 12px 16px;
   margin-bottom: 6px;
-  color: var(--nav-text);
-  text-decoration: none;
-  font-size: 0.9rem;
   border-radius: 8px;
-  transition: all 0.2s;
+  color: var(--nav-text);
+  font-family: 'Libre Baskerville', 'Georgia', serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  border: 1px solid transparent;
 }
 
+/* Effet de survol */
 .nav-link::before {
   content: '';
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 3px;
-  height: 0;
-  background: var(--nav-primary);
-  border-radius: 0 3px 3px 0;
-  transition: height 0.2s;
-}
-
-.nav-link:hover {
-  background: var(--nav-surface);
-  color: var(--nav-primary-light);
-  padding-left: 20px;
+  width: 0;
+  height: 60%;
+  background: var(--nav-gradient);
+  border-radius: 0 4px 4px 0;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.6;
 }
 
 .nav-link:hover::before {
-  height: 60%;
+  width: 3px;
 }
 
+.nav-link:hover {
+  background: var(--nav-hover-bg);
+  border-color: var(--nav-border);
+  transform: translateX(4px);
+  color: var(--nav-co-1);
+}
+
+/* Lien actif */
 .nav-link.active {
-  background: var(--nav-primary);
-  color: #fff;
-  font-weight: 600;
+  background: linear-gradient(135deg, 
+    rgba(var(--nav-co-1-rgb, 224, 76, 185), 0.08),
+    rgba(var(--nav-co-3-rgb, 91, 194, 149), 0.08)
+  );
+  border-color: var(--nav-co-1);
+  color: var(--nav-co-1);
+  font-weight: 500;
 }
 
 .nav-link.active::before {
-  display: none;
+  width: 3px;
 }
 
-/* Liens externes (icône) */
+/* Icône externe (petite flèche) */
+.nav-external {
+  position: relative;
+}
+
 .nav-external svg {
-  width: 14px;
-  height: 14px;
-  stroke: currentColor;
+  width: 12px;
+  height: 12px;
   opacity: 0.5;
-  flex-shrink: 0;
+  transition: all 0.3s;
 }
 
 .nav-external:hover svg {
   opacity: 1;
+  transform: translate(2px, -2px);
 }
 
-/* ─────────────────────────────────────────────────────────
+
+/* ═══════════════════════════════════════════
    RESPONSIVE
-   ───────────────────────────────────────────────────────── */
+   ═══════════════════════════════════════════ */
 
 @media (max-width: 600px) {
   .nav-toggle {
-    top: 15px;
-    left: 15px;
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
+    top: 16px;
+    left: 16px;
   }
-  
+
   .nav-drawer {
     width: 100vw;
     max-width: 100vw;
+    left: -100vw;
   }
-  
+
   .nav-content {
-    padding: 60px 16px 24px 16px;
+    padding: 0 20px 40px 20px;
+  }
+
+  .nav-section-title {
+    font-size: 0.65rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 11px 14px;
   }
 }
-```
 
-### 4. Marche à suivre
 
-**Étape 1 : Créer le fichier CSS sur GitHub**
+/* ═══════════════════════════════════════════
+   POLICES (si non chargées ailleurs)
+   ═══════════════════════════════════════════ */
 
-1. Allez dans votre repository GitHub
-2. Créez un nouveau fichier `navigation.css`
-3. Collez-y le CSS ci-dessus
-4. Committez le fichier
+@font-face {
+  font-family: 'Glamour';
+  src: url('https://file.garden/aEdE1_TgcQeU-vp-/Glamour') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-**Étape 2 : Obtenir l'URL jsdelivr**
-
-L'URL sera de la forme :
-```
-https://cdn.jsdelivr.net/gh/VotreUsername/VotreRepo@branche/navigation.css
+@font-face {
+  font-family: 'Wedding Bell';
+  src: url('https://file.garden/aEdE1_TgcQeU-vp-/Wedding%20Bells') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
