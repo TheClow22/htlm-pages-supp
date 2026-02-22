@@ -293,10 +293,10 @@
   margin-bottom: 12px;
   padding: 0 4px;
   font-family: 'Glamour', 'Cinzel', serif;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--nav-text-muted);
+  color: var(--co-2);
   font-weight: 600;
 }
 
@@ -320,7 +320,8 @@
   border-radius: 8px;
   color: var(--nav-text);
   font-family: 'Libre Baskerville', 'Georgia', serif;
-  font-size: 0.85rem;
+  text-transform: uppercase; 
+  font-size: 0.65rem;
   font-weight: 400;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
