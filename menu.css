@@ -34,11 +34,11 @@
   --nav-glow: rgba(196, 129, 33, 0.4);
 }
 
-/* Page Races (à définir selon votre page) */
+/* Page Races (rose/violet/bleu) */
 #globalNav[data-page="races"] {
-  --nav-co-1: #8C000C;
-  --nav-co-2: #B53D2A;
-  --nav-co-3: #480896;
+  --nav-co-1: #D97FF0;
+  --nav-co-2: #7833B5;
+  --nav-co-3: #4739BF;
   --nav-gradient: linear-gradient(45deg, #480896, #8C000C, #480896);
   --nav-glow: rgba(140, 0, 12, 0.4);
 }
@@ -296,7 +296,7 @@
   font-size: 0.9rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--co-2);
+  color: var(--co-3);
   font-weight: 600;
 }
 
