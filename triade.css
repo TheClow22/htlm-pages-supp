@@ -140,7 +140,7 @@ a{text-decoration:none;color:inherit}
 /* ═══════════════════════════════════════════
    BODY + TEXT
    ═══════════════════════════════════════════ */
-#tr .rbdy{max-width:1100px;margin:0 auto;padding:50px 40px 80px;background:rgba(10,12,14,.88);border-radius:0 0 16px 16px}
+#tr .rbdy{max-width:1100px;margin:0 auto;padding:50px 40px 80px;background:rgba(10,12,14,.68);border-radius:0 0 16px 16px}
 #tr .rdsc{font-family:var(--font-4);font-size:1.05rem;color:var(--contrastLight);line-height:2;max-width:850px;margin:0 auto 65px;text-align:justify}
 #tr .rdsc p{margin-bottom:22px}
 #tr .rdsc strong,#tr .rdsc b{color:var(--co-1-light);font-weight:600}
