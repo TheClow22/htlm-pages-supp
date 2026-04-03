@@ -1,0 +1,550 @@
+{
+  "draegir": {
+    "categorie": "Dominantes",
+    "nom": "Draegir",
+    "tagline": "Feu & Légende",
+    "cardImage": "https://i.postimg.cc/3xcrMkdv/Chat-GPT-Image-15-fevr-2026-18-03-43.png",
+    "accroche": "Leur existence même impose le respect.",
+    "images": [
+      "https://i.pinimg.com/736x/82/a3/f6/82a3f6ef13ac4253ac646aab60a76d77.jpg",
+      "https://i.pinimg.com/736x/97/ba/13/97ba137a045065d8de590bb14dd4b4b1.jpg",
+      "https://i.pinimg.com/736x/3d/94/90/3d9490a75966dab06047826355d1059c.jpg"
+    ],
+    "description": [
+      "<p>Créatures <bb3>de feu et de légende</bb3>, les Draegirs sont des vanes dont l'existence même <u2>impose le respect</u2>. Leur espèce, aujourd'hui <ls>rare</ls>, appartient à ces puissances anciennes que l'on évoque à voix basse, comme on parlerait d'un mythe encore vivant. Leur présence est <bb1>écrasante </bb1>: <u3>ils sont un brasier incarné</u3>, une <ba2>force ardente</ba2> contenue dans une enveloppe charnelle. <i4>Leur aura brûle presque autant que leur pouvoir.</i4></p>",
+      "<p>Un Draegir peut consumer par le <ls>contact</ls> comme par le <ls>souffle</ls>. Leur feu n'est pas toujours visible, mais il est toujours là, <c4>prêt à s'éveiller.</c4> <bg3>Les Draegirs possèdent.</bg3> Ils accumulent. <i4>Ils protègent</i4>. Attirés instinctivement par <u2>la valeur</u2>, ils reconnaissent sans effort une pierre véritable d'un simple objet de pacotille. Cette faculté fait partie de leurs secrets les plus anciens. Leurs <ls>trésors</ls> ne sont pas uniquement matériels : un être vivant peut devenir <bb7>possession</bb7> au même titre qu'un <ba4>artefact rare.</ba4></p>",
+      "<p>Lorsqu'un Draegir décrète qu'un bien ou qu'un être fait partie de son trésor, ses <ls>yeux</ls> changent de couleur. La marque est invisible, mais <u2>absolue</u2>. À partir de cet instant, il sait. À distance. Il sent si son trésor est touché, menacé, s'il lui échappe ou si sa vie est en danger. Près de ce qu'ils possèdent, les Draegirs se sentent <em>calmes</em>, ancrés, rassurés — comme si le feu en eux trouvait enfin un foyer.</p>",
+      "<p>Mais perdre un trésor est une <bb1>blessure profonde</bb1>. En être séparé trop longtemps, ou pire, voir un trésor disparaître définitivement, peut les plonger dans une <u3>dépression ardente</u3> qui affaiblit leur pouvoir. Plus rare encore, lorsque leur cœur se brise, <bb3>le feu se refroidit</bb3>. Leur chaleur décroît, leur<em> flamme vacille.</em> Car sous leur orgueil et leur charisme écrasant, les Draegirs sont des créatures <i2>profondément sensibles</i2>, dissimulant leur vulnérabilité derrière une fierté farouche.</p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Brasier vivant",
+        "desc": "Les Draegirs dégagent une chaleur intense. Sous l'effet d'émotions fortes, cette chaleur augmente jusqu'à faire fondre ou embraser leur environnement immédiat.",
+        "phrase": "Le brasier ne s'éteint jamais — il sommeille."
+      },
+      {
+        "nom": "Force surhumaine",
+        "desc": "Leur corps est doté d'une puissance physique hors normes, renforcée par leur lien au feu et à leur aura ancienne.",
+        "phrase": "Un seul coup peut briser ce que d'autres peinent à ébranler."
+      },
+      {
+        "nom": "Peau cuirassée",
+        "desc": "Leur chair devient partiellement ou totalement écailleuse lorsqu'ils se laissent submerger par leurs émotions, rendant leur corps difficile à blesser.",
+        "phrase": "Les émotions forgent leur armure."
+      },
+      {
+        "nom": "Sang brûlant",
+        "desc": "Leur sang est incandescent, semblable à de la lave, rendant toute blessure infligée à un Draegir dangereuse pour son agresseur.",
+        "phrase": "Blesser un Draegir, c'est se brûler soi-même."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Aura dominante",
+        "desc": "Les Draegirs dégagent une magie ancienne et une présence écrasante qui intimide naturellement leur entourage."
+      },
+      {
+        "nom": "Manifestation draconique",
+        "desc": "Leurs émotions révèlent leur véritable nature : écailles visibles, chaleur accrue, regard changeant."
+      },
+      {
+        "nom": "Trésor marqué",
+        "desc": "Lorsqu'un bien ou un être devient leur trésor, les yeux du Draegir changent de couleur. Il peut alors ressentir à distance toute menace ou danger pesant sur ce qui lui appartient."
+      }
+    ]
+  },
+  "kitsune": {
+    "categorie": "Dominantes",
+    "nom": "Kitsune",
+    "tagline": "Ruse & Adaptation",
+    "cardImage": "https://i.postimg.cc/jq7RLjB0/Chat-GPT-Image-15-fevr-2026-17-55-54.png",
+    "accroche": "Maîtres des masques et des jeux de pouvoir.",
+    "images": [
+      "https://i.pinimg.com/736x/e2/9d/62/e29d62e66142baeb9da76c5308fb634b.jpg",
+      "https://i.pinimg.com/736x/dd/8b/fc/dd8bfc5a0a86330e3de1b5855c064bda.jpg",
+      "https://i.pinimg.com/1200x/13/a7/5c/13a75cd2ec2cf3e05b77c350dbf8ecd1.jpg"
+    ],
+    "description": [
+      "<p>Créatures <i3>de ruse et d'adaptation</i3>, les Kitsune sont des vanes profondément <i3>versatiles</i3>, capables de comprendre leur environnement avec une <bb2>finesse instinctive</bb2>. Ils s'y adaptent, s'y fondent, puis en tirent profit avec une élégance déroutante. Là où d'autres luttent pour exister, <ba4>les Kitsune jouent. </ba4>C'est pourquoi on les retrouve majoritairement en <ls>haute ville</ls>, là où les intrigues, les alliances et les jeux de pouvoir forment un immense échiquier à ciel ouvert.</p>",
+      "<p><ba4>Les Kitsune portent un masque.</ba4> Pas un seul, mais des <i3>dizaines. </i3>Un différent pour chaque personne rencontrée. Rusés, charmeurs, insaisissables, ils savent se faire apprécier juste assez pour inspirer confiance, puis pour obtenir ce qu'ils désirent. On se <u2>méfie</u2> d'eux autant qu'on apprécie leur compagnie. Leur présence est agréable, leur conversation brillante, mais derrière chaque sourire se cache une <ls>intention calculée.</ls> Secrets murmurés, confidences arrachées, chantages élégants : les Kitsune excellent dans l'art de faire tomber les masques… tout en conservant les leurs.</p>",
+      "<p>Leur faculté oratoire et leur capacité à pénétrer l'esprit des autres sont telles qu'ils ont, au fil des âges, façonné l'imaginaire collectif. À force de mots, de récits et de manipulations subtiles, ils ont réussi à ancrer l'idée que <bb3>les Douze</bb3>, les ont <span style=\"text-decoration: underline;\">choisi</span>. Une croyance savamment entretenue, <em>jamais confirmée</em>,<bb2> jamais démentie.</bb2></p>",
+      "<p>Chaque Kitsune naît sous l'influence d'un mois lié à l'un des Douze. Ce lien se manifeste par une <ls>bénédiction</ls>, un ensemble de pouvoirs inspirés des attributs du dieu associé. Ce don façonne une partie de leur identité, renforçant encore leur image de figures quasi célestes. Mais cette ascension n'est pas née de la foi : elle est le fruit de <em>l'art des mots</em>, de la manipulation et de nombreux vices.</p>",
+      "<p><span style=\"text-decoration: underline;\">Ni saints, ni démons,</span> les Kitsune évoluent dans l'entre-deux. Ils observent, apprennent, mémorisent. Leur force n'est pas frontale : elle est mentale, sociale, subtile. Ils ne dominent pas le monde par la guerre, mais par l'influence et dans ce domaine, peu peuvent rivaliser avec eux.</p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Mémoire sensorielle",
+        "desc": "Chaque Kitsune possède une mémoire exceptionnellement développée liée à un sens précis (vue, ouïe, toucher, etc.), lui permettant de retenir avec une précision troublante les informations associées à ce sens.",
+        "phrase": "Un seul sens, une mémoire parfaite."
+      },
+      {
+        "nom": "Pas silencieux",
+        "desc": "Leur démarche est naturellement inaudible. Ils aiment surprendre par une présence discrète et soudaine, apparaissant sans prévenir.",
+        "phrase": "On ne les entend jamais arriver."
+      },
+      {
+        "nom": "Observation accrue",
+        "desc": "Très perspicaces, les Kitsune possèdent une sensibilité exacerbée à leur environnement, aux détails et aux variations de comportement.",
+        "phrase": "Rien ne leur échappe — rien."
+      },
+      {
+        "nom": "Bénédiction des Douze",
+        "desc": "Chaque Kitsune tire des pouvoirs spécifiques du dieu associé à son mois de naissance, qu'il nomme une bénédiction.",
+        "phrase": "Un don divin, ou une illusion savamment entretenue."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Traits chromatiques",
+        "desc": "Les Kitsune naissent avec une couleur de yeux et de queue spécifique, chaque teinte étant liée à une émotion particulière."
+      },
+      {
+        "nom": "Émotions visibles",
+        "desc": "Leurs émotions se manifestent à travers ces couleurs, une faiblesse pour ces êtres qui affectionnent le secret. C'est pourquoi ils ne révèlent jamais quelle émotion correspond à quelle couleur."
+      },
+      {
+        "nom": "Queues éthérées",
+        "desc": "Leurs queues sont faites d'énergie éthérée. Plus un Kitsune en possède, plus sa puissance et son influence sont grandes. Les couleurs et manifestations sont propres à chaque individu."
+      }
+    ]
+  },
+  "sorcier": {
+    "categorie": "Dominantes",
+    "nom": "Sorcier",
+    "tagline": "Sang & Lignée",
+    "cardImage": "https://i.postimg.cc/K8HcX1RB/Chat-GPT-Image-15-fevr-2026-18-05-56.png",
+    "accroche": "La magie coule dans leur sang.",
+    "images": [
+      "https://i.pinimg.com/736x/e8/86/15/e88615eaf0cccfcc749f26a6da330f51.jpg",
+      "https://i.pinimg.com/1200x/68/ee/80/68ee80e23d5d4f60689a16ca8353a8e2.jpg",
+      "https://i.pinimg.com/1200x/59/a1/3d/59a13d56066526e1c5857f1cc153214b.jpg"
+    ],
+    "description": [
+      "<p>Les sorciers sont des vanes dont la magie ne se transmet pas par apprentissage isolé, mais par le <ls>sang</ls> et la <span style=\"text-decoration: underline;\">filiation</span>. Ils vivent en <bb1>familles soudées</bb1>, rarement dispersées, car leur pouvoir est <u2>indissociable</u2> de leur lignée. Un sorcier sans sa famille est <ba4>un pouvoir amputé</ba4>. <bb3>Ensemble</bb3>, ils forment des communautés discrètes, solidaires et <i2>profondément secrètes.</i2></p>",
+      "<p><ba4>Chaque famille possède sa propre magie.</ba4> Une essence unique, façonnée par les générations passées. Si le pouvoir se décline différemment selon chaque individu, un <ls>lien invisible</ls> unit tous les membres d'une même lignée. Cette continuité est entretenue par un objet sacré : le <ls>grimoire familial</ls>. À chaque génération, les sorciers y consignent leurs découvertes, leurs variantes de sorts, leurs réussites comme leurs erreurs. Ainsi, <bb7>la magie grandit</bb7>, s'affine et se renforce au fil du temps.</p>",
+      "<p>Selon la tradition, les sorciers puiseraient leur pouvoir dans la <bb3>magie de Thessara</bb3>. Officiellement, il s'agit d'une légende, d'un folklore transmis à voix basse. Officieusement, les sorciers considèrent cette origine comme un <span style=\"text-decoration: underline;\">secret fondamental.</span> Ce mythe fonde leur rapport sacré à la magie : elle n'est jamais anodine, ni totalement maîtrisable.</p>",
+      "<p><span style=\"text-decoration: underline;\">Seules les femmes sorcières portent le gène.</span> De ce fait, la société sorcière est profondément <em>matriarcale</em>. Les femmes détiennent l'autorité au sein de la famille, prennent les décisions majeures et veillent à la transmission du pouvoir. Les hommes, bien que sorciers eux aussi, héritent de la magie par la lignée maternelle et s'inscrivent dans cet ordre ancien sans le remettre en cause.</p>",
+      "<p>Les unions extérieures sont rares et mal vues. Épouser une autre vane que son propre genre est perçu comme une <bb3>rupture du cycle</bb3>. Car c'est par l'union entre sorciers que les grimoires se remplissent, que la magie évolue et que la lignée s'élève. Cette fermeture leur vaut une réputation presque <ba4>sectaire</ba4>. Pire encore : le vol ou la simple lecture d'un grimoire familial sans consentement est considéré comme un <u3>crime impardonnable</u3>.</p>",
+      "<p><c4>Les sorciers respectent la magie.</c4> Car ils savent qu'elle est vivante, instable, imprévisible. Mal traitée, utilisée avec inconscience ou orgueil, elle peut provoquer des effets incontrôlables : un sort trop puissant peut déclencher un véritable <min3>effet papillon</min3>. C'est pourquoi leur art est pratiqué avec prudence, <ba3>transmission et mémoire</ba3>, plutôt qu'avec démesure.</p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Sens magique",
+        "desc": "Les sorciers perçoivent instinctivement la présence d'un sort, d'un artefact ou d'une magie résiduelle. Ils sont également capables d'évaluer la puissance d'une Vane par intuition.",
+        "phrase": "Ils sentent la magie comme d'autres sentent le vent."
+      },
+      {
+        "nom": "Art alchimique",
+        "desc": "Ils maîtrisent la fabrication de potions, de grimoires et de rituels. Plus une famille est ancienne, plus sa magie et ses créations sont puissantes.",
+        "phrase": "Chaque potion est un héritage liquide."
+      },
+      {
+        "nom": "Magie héréditaire",
+        "desc": "Chaque famille possède une magie unique, transmise et enrichie au fil des générations par le grimoire familial.",
+        "phrase": "Le grimoire est le cœur battant de la lignée."
+      },
+      {
+        "nom": "Effet papillon",
+        "desc": "Certains sorts peuvent avoir des conséquences imprévues et disproportionnées, rappelant que la magie reste instable et dangereuse si elle est mal employée.",
+        "phrase": "Un murmure peut provoquer une tempête."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Adaptation physique",
+        "desc": "Le corps du sorcier reflète la nature de sa magie : une magie positive même en surface confère des traits lumineux et harmonieux, tandis qu'une magie négative ou plus insidieuse altère le physique."
+      },
+      {
+        "nom": "Aura magique",
+        "desc": "Leur aura est directement liée à leur pouvoir, plus la famille est puissante, plus elle est forte."
+      },
+      {
+        "nom": "Lignée marquée",
+        "desc": "Les sorciers portent souvent des signes de leur appartenance familiale, parfois évidents ou secrets, visibles pour ceux capables de lire la magie."
+      }
+    ]
+  },
+  "lumen": {
+    "categorie": "Dominantes",
+    "nom": "Lumen",
+    "tagline": "Progrès & Démesure",
+    "cardImage": "https://i.postimg.cc/13jRx8f6/Chat-GPT-Image-15-fevr-2026-18-08-02.png",
+    "accroche": "Génies visionnaires ou dangereux savants fous.",
+    "images": [
+      "https://i.pinimg.com/736x/b8/96/81/b89681072f44c9d2e13ba44459ae3d3b.jpg",
+      "https://i.pinimg.com/1200x/5e/ae/93/5eae93dad3832d154fc8b3eedbe3e902.jpg",
+      "https://i.pinimg.com/736x/fd/84/b9/fd84b9d376f103b5b66859a4ff1e2eab.jpg"
+    ],
+    "description": [
+      "<p>Créatures <i3>de progrès et de démesure</i3>, les Lumens sont originaires de <ls>Yunhei</ls>, cité-nation où la technologie et la magie ont cessé de s'opposer pour fusionner. <bb1>Architectes </bb1>du monde moderne, ils sont à l'origine des plus grandes avancées technologiques du pays. Pour certains, ils sont des <span style=\"text-decoration: underline;\">génies visionnaires</span>. Pour d'autres, de <i3>dangereux savants fous </i3>dont l'esprit dépasse toute limite raisonnable.Ils <i3>pensent</i3> en schémas, <u2>rêvent</u2> en circuits, <bb1>ressentent</bb1> le monde comme un flux d'énergie à transformer. Leur créativité est sans bornes : prothèses technomagiques pour les amputés, innovations euphorisantes flirtant avec l'addiction, armes mortelles marquées de leur signature <bb3>bleutée néon</bb3>. Chaque invention porte leur empreinte brillante,<bb3> instable</bb3>, parfois<ls> terrifiante.</ls></p>",
+      "<p><ba4>Les Lumens sont profondément divisés.</ba4>Ceux <ls>d'en haut</ls> ont conservé leur place en acceptant les contraintes, les ordres et les cadres imposés par le pouvoir. Ils créent sous supervision, contrôlent leurs dérives, sacrifient une part de leur folie pour rester utiles. Ceux <ls>d'en bas</ls>, au contraire, ont refusé <span style=\"text-decoration: underline;\">toute limite</span>. Ils ont préféré l'exil, l'ombre et les réseaux clandestins, offrant leur génie à ceux que leur audace, <bb2>ou leur démence</bb2>, fascine. Là où certains voient de la trahison, d'autres parlent de <time>liberté absolue.</time></p>",
+      "<p>Les Lumens sont des inventeurs rares, <span style=\"text-decoration: underline;\">prisés… parfois contraints</span>. Les plus grands noms, les puissances politiques ou criminelles cherchent à s'attacher leurs services, par la promesse, l'or ou la menace. Car un Lumen <i4>capable de transformer l'électricité en matière arcanique</i4> détient une ressource que nul autre ne maîtrise pleinement. Cette énergie porte un nom : <bb3>Neuma</bb3>. Une forme d'énergie magique nouvelle, instable, exploitée aussi bien pour alimenter des armes et des artefacts que pour la création de drogues aux effets puissants. Les Lumens en sont les seuls véritables artisans.</p>",
+      "<p><span style=\"text-decoration: underline;\">Le savoir a un prix.</span>Leur esprit ne connaît <bb1>jamais </bb1>le repos. Ils rêvent de créations à venir, de formes impossibles, de mécanismes inachevés. Ces visions les hantent jusqu'à ce qu'elles prennent forme dans le réel. Et parfois, même alors, la <u2>folie persiste</u2>.</p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Transmutation énergétique",
+        "desc": "Les Lumens peuvent transformer l'électricité en matière arcanique, générant une énergie magique appelée Neuma, utilisée pour alimenter armes, objets et substances.",
+        "phrase": "L'électricité devient magie entre leurs mains."
+      },
+      {
+        "nom": "Gène d'inventeur",
+        "desc": "Ils rêvent de créations technomagiques encore inexistantes. Ces visions deviennent obsessionnelles jusqu'à ce qu'ils parviennent à leur donner vie.",
+        "phrase": "La vision ne s'arrête jamais."
+      },
+      {
+        "nom": "Savoir technologique inné",
+        "desc": "Les Lumens possèdent une compréhension instinctive de la technologie, leur permettant de créer, améliorer et perfectionner tout dispositif.",
+        "phrase": "Ils parlent le langage des machines."
+      },
+      {
+        "nom": "Stockage électrique",
+        "desc": "Ils peuvent emmagasiner de l'électricité dans leur corps et la libérer pour se défendre ou alimenter temporairement des créations.",
+        "phrase": "Leur corps est une batterie vivante."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Veines conductrices",
+        "desc": "De fines veines métalliques parcourent leur peau, visibles en surface comme des fils de fer argentés."
+      },
+      {
+        "nom": "Sang énergétique",
+        "desc": "Leur sang est bleu électrique et dégage une odeur d'essence lorsqu'il est exposé à l'air."
+      },
+      {
+        "nom": "Cœur de Neuma",
+        "desc": "Leur cœur est visible à la surface de la peau : une pierre turquoise veinée de circuits rose, bleu et doré, émettant une lueur douce au rythme de leurs battements. Son emplacement varie selon chaque Lumen."
+      },
+      {
+        "nom": "Réflexe défensif",
+        "desc": "Tout contact direct avec leur cœur déclenche une décharge électrique automatique destinée à protéger l'organe."
+      }
+    ]
+  },
+  "malefir": {
+    "categorie": "Dominantes",
+    "nom": "Malefir",
+    "tagline": "Péché & Dissonance",
+    "cardImage": "https://i.postimg.cc/ryWYvj8Z/Chat-GPT-Image-15-fevr-2026-23-59-53.png",
+    "accroche": "Ils incarnent les sept péchés capitaux.",
+    "images": [
+      "https://i.pinimg.com/736x/f5/dc/c8/f5dcc888b548d69e7d119a3735d80bb6.jpg",
+      "https://i.pinimg.com/736x/da/1c/f3/da1cf34cc1d993ebc7bf3fe2b0f784e3.jpg",
+      "https://i.pinimg.com/1200x/c3/b1/da/c3b1da6f45af48ca2c7c67a596bccb9b.jpg"
+    ],
+    "description": [
+      "<p>Êtres <i3>de péché et de dissonance</i3>, les Malefirs incarnent les <bb1>sept péchés capitaux</bb1> dans ce qu'ils ont de plus brut et de plus troublant. Leur présence <ba2>dérange</ba2> autant qu'elle <ba4>fascine</ba4>. Ils <em>perturbent l'équilibre</em>, fissurent les masques sociaux et attirent les regards comme une flamme attire les insectes. Là où ils passent, quelque chose se dévoile, <span style=\"text-decoration: underline;\">ce que les autres s'efforcent de cacher</span>.</p>",
+      "<p><ba4>Les Malefirs vivent pour le chaos.</ba4> Ils s'épanouissent dans le désordre, les excès, les <u2>failles humaines</u2>. Espèce crainte bien plus que respectée, ils se terrent majoritairement en <ls>basse ville</ls>, là où la misère, les vices et les drames leur servent de terreau.</p>",
+      "<p>On dit souvent d'eux qu'ils feignent l'empathie, qu'ils en sont incapables. <bb1>C'est faux.</bb1> Les Malefirs sont des <bb3>émotions incarnées</bb3>. Ils ressentent intensément — trop, parfois — mais leur plaisir ne réside pas dans la compassion. Ils vivent pour <em>répandre</em> ces émotions chez les autres, <bb2>les amplifier</bb2>, les<i4> déformer.</i4> Ils <ls>corrompent</ls> ce qu'il y a de plus pur, non par simple cruauté, mais parce que le drame est leur nourriture.</p>",
+      "<p>Chaque Malefir est lié à un péché précis, qui façonne sa personnalité, ses désirs et ses pouvoirs. Leur simple présence agit comme un poison lent : elle influence, murmure, incite. Ils sont cette voix intérieure qui pousse à céder, à franchir une limite, à faire un mauvais choix. <span style=\"text-decoration: underline;\">Un démon sur l'épaule</span>, séduisant et persuasif.</p>",
+      "<p><i3>La douleur est pour eux un aphrodisiaque.</i3> Les excès : drogue, alcool, plaisirs destructeurs. Amplifient leur aura démoniaque et rendent leur influence plus difficile à repousser. Ils prospèrent dans les spirales de chute, qu'elles soient les leurs ou celles des autres.</p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Lecture du péché",
+        "desc": "Les Malefirs savent instinctivement quel péché sommeille en chaque individu, qu'il soit assumé ou refoulé.",
+        "phrase": "Ils voient ce que vous cachez."
+      },
+      {
+        "nom": "Influence corruptrice",
+        "desc": "Leur présence pousse naturellement les autres vers leurs pulsions obscures, affaiblissant les barrières morales.",
+        "phrase": "Un poison invisible, lent et délicieux."
+      },
+      {
+        "nom": "Suggestion démoniaque",
+        "desc": "Dotés d'une parole anormalement persuasive, ils peuvent influencer par hypnose auditive, soufflant de mauvaises décisions avec une efficacité troublante.",
+        "phrase": "Leur voix est une arme."
+      },
+      {
+        "nom": "Pouvoirs du péché",
+        "desc": "Chaque Malefir possède des capacités uniques liées au péché capital qu'il incarne.",
+        "phrase": "Le péché façonne le pouvoir."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Double visage",
+        "desc": "Les Malefirs possèdent deux apparences : l'une séduisante, appelant au péché, l'autre révélant leur véritable nature cauchemardesque."
+      },
+      {
+        "nom": "Masque fissuré",
+        "desc": "Chaque utilisation de leur pouvoir laisse apparaître des détails de leur vraie forme (peau altérée, regard inhumain...) La perte de contrôle ou le manque lié à leur péché révèle entièrement leur véritable visage."
+      },
+      {
+        "nom": "Attributs démoniaques",
+        "desc": "Ils possèdent une queue démoniaque dont la forme est propre à chacun."
+      },
+      {
+        "nom": "Sourire malsain",
+        "desc": "Leur sourire est naturellement dérangeant, oscillant entre séduction et malveillance."
+      }
+    ]
+  },
+  "fae": {
+    "categorie": "Intermédiaires",
+    "nom": "Fae",
+    "tagline": "Contes & Merveilles",
+    "cardImage": "https://i.postimg.cc/dtvtYM6W/Chat-GPT-Image-15-fevr-2026-18-35-01.png",
+    "accroche": "Inscrivant l'imaginaire dans le réel.",
+    "images": [
+      "https://i.ibb.co/b51Zg8R3/F0827-A57-34-D7-4-EE0-9-E49-B3-B8-F1-C5333-E.webp",
+      "https://i.ibb.co/d0dxpKML/8-A9-A5101-1-B0-A-418-D-8-ADF-D681264-DF472.webp",
+      "https://i.ibb.co/sdBdXG9r/8-E7-AE8-BB-128-D-4-E5-E-847-A-679-FFC8-CE6-F9.webp"
+    ],
+    "description": [
+      "<p>Les Faes sont un peuple qui a nourri d'innombrables <ba4>contes.</ba4> Leur <ba3>apparence merveilleuse</ba3> et leur <em>magie singulière </em>façonnent les rêves comme les cauchemars, leur permettant d'inscrire l'imaginaire directement dans le réel.</p>",
+      "<p>Les Faes sont divisés en deux cours : la <bb1>Cour Seelie</bb1>, dite lumineuse, qui règne majoritairement en haute ville, et la <bb2>Cour Unseelie</bb2>, perçue comme plus sombre, installée en basse ville. En vérité, peu de choses les distinguent réellement. À l'exception de leur apparence et de certaines expressions de leur magie, leurs natures sont similaires. Pourtant, ils tiennent farouchement à cette séparation. Être désigné simplement comme <span style=\"text-decoration: underline;\">fae</span>, sans mention de la cour, est considéré comme un profond manque de respect.</p>",
+      "<p>Les Fae sont généralement appréciés. Leur <ba3>beauté fascine</ba3>, leur grâce rassure. Mais cette admiration s'accompagne toujours d'une certaine <ba1>vigilance</ba1>. On se méfie de leur magie, de leurs sourires trop parfaits, de leurs<i3> promesses floues.</i3> Les Unseelies, en particulier, sont victimes d'une réputation <u2>injuste</u2>, souvent décrits comme plus mesquins ou manipulateurs, alors qu'ils ne sont que le reflet plus brut de la même essence.</p>",
+      "<p>Dans les zones les plus pauvres de la basse ville, certains Faes isolés sont exploités pour une capacité bien particulière : la production d'une <ls>substance hallucinogène</ls>. Issue de l'extrémité de leurs doigts, cette poudre est utilisée en médecine pour détourner la douleur, mais également de manière illégale à des fins récréatives. Une pratique strictement interdite, du moins selon les lois officielles. En basse ville, <i4>d'autres règles s'appliquent.</i4></p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Illusions",
+        "desc": "Les Faes manipulent les perceptions, façonnant des illusions capables de matérialiser rêves ou cauchemars dans le réel.",
+        "phrase": "Rêve ou réalité ? Ils décident."
+      },
+      {
+        "nom": "Poudre féerique",
+        "desc": "Ils produisent une substance hallucinogène par l'extrémité de leurs doigts, utilisée à des fins médicales ou détournée pour des usages récréatifs illégaux.",
+        "phrase": "Le remède et le poison ne font qu'un."
+      },
+      {
+        "nom": "Ombre détachable",
+        "desc": "Leur ombre peut s'épaissir et se détacher du corps afin d'espionner ou d'explorer. Une séparation prolongée entraîne pertes de mémoire, confusion et désorientation jusqu'à la récupération de l'ombre.",
+        "phrase": "L'ombre a sa propre volonté."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Traits féeriques",
+        "desc": "Les Faes possèdent des oreilles pointues de type elfique, une grande beauté naturelle et dégagent un parfum floral subtil."
+      },
+      {
+        "nom": "Différence de cour",
+        "desc": "Les Seelies présentent des traits lumineux et clairs, tandis que les Unseelies arborent des caractéristiques plus sombres et contrastées."
+      },
+      {
+        "nom": "Cœur émotionnel",
+        "desc": "Leur cœur est trop petit pour contenir plusieurs émotions à la fois, rendant chaque sentiment intense, absolu et presque sans nuance."
+      }
+    ]
+  },
+  "neko": {
+    "categorie": "Intermédiaires",
+    "nom": "Neko",
+    "tagline": "Augure & Ambiguïté",
+    "cardImage": "https://i.postimg.cc/xTYT2r56/Chat-GPT-Image-15-fevr-2026-18-35-58.png",
+    "accroche": "À la frontière entre chance et malheur.",
+    "images": [
+      "https://i.pinimg.com/736x/ef/ee/7f/efee7fe55b23bb11e1706bce1ca4bd5d.jpg",
+      "https://i.pinimg.com/736x/16/d9/2d/16d92dbb3fc2bb3364a16b3d326f8ac8.jpg",
+      "https://i.pinimg.com/736x/2a/05/ba/2a05ba1e7cd6935b98134d8f79db4e91.jpg"
+    ],
+    "description": [
+      "<p>Créatures <i3>d'augure et d'ambiguïté</i3>, les Neko sont des vanes nées du hasard et de la superstition, à la frontière fragile entre la chance espérée et le malheur redouté. Ils incarnent cette dualité constante où la fortune et la perte avancent côte à côte, <ba4>indissociables.</ba4> Lorsque leur magie effleure le monde, un <ls>carillon léger</ls> tinte dans l'air, comme un souffle discret du destin annonçant qu'un fil vient d'être tiré. Ce son n'est jamais innocent, il marque l'instant où le hasard bascule.</p>",
+      "<p><c3>Fondamentalement neutres</c3>, ils oscillent entre <c1>bienfait</c1> et <c2>présage funeste</c2>, reflétant simplement ce qu'on projette sur eux. C'est pourquoi tant de boutiques suspendent des carillons à leurs portes : nombre d'entre eux ont été façonnés par des Neko, chargés d'attirer la chance… ou de détourner le malheur.Là où les chats crachent des boules de poils, les Neko libèrent des <ls>prédictions</ls>. De courts messages, semblables aux mots de fortune glissés dans les biscuits chinois. Lorsqu'ils sont appliqués sur la peau, ces présages deviennent des <em>tatouages éphémères</em>, l'encre s'inscrivant comme une sentence douce ou cruelle, avant de se dissoudre une fois la prédiction accomplie.</p>",
+      "<p><span style=\"text-decoration: underline;\">Ni bienveillants, ni malfaisants,</span> les Neko sont <em>insaisissables</em>, parfois tendres, parfois cruels, toujours <bb7>imprévisibles.</bb7> Certains les emploient pour bénir des objets, attirer la prospérité ou protéger un lieu. D'autres cherchent à exploiter leur pouvoir pour <i2>maudire</i2> des ennemis. Mais tous apprennent la même vérité : leur magie n'est pas domptable. Comme les chats, elle ne répond qu'à <bb3>la tendresse</bb3>, au soin, à la patience — jamais à la contrainte. Majoritairement présents en basse ville, vivant en groupes errants ou dans une solitude farouche.</p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Chance & Malheur",
+        "desc": "Les Neko influencent le hasard de manière instinctive, apportant chance ou malheur selon leur humeur et la manière dont ils sont traités. Leur magie n'est jamais totalement contrôlable et agit comme un équilibre fragile entre bénédiction et présage funeste.",
+        "phrase": "Le destin leur obéit… parfois."
+      },
+      {
+        "nom": "Carillon du destin",
+        "desc": "Lorsque leur magie s'active, un tintement de carillon léger résonne dans l'air, signalant une modification du destin. Ce son accompagne la création de porte-bonheurs, de malédictions ou l'activation de leur pouvoir.",
+        "phrase": "Entendre le carillon, c'est savoir que tout a changé."
+      },
+      {
+        "nom": "Présages tatoués",
+        "desc": "Les Neko libèrent des prédictions sous forme de courts messages. Appliqués sur la peau, ces mots deviennent des tatouages éphémères dont l'encre se dissout une fois la prédiction accomplie, qu'elle mène à la chance ou au malheur.",
+        "phrase": "L'encre disparaît, la vérité reste."
+      },
+      {
+        "nom": "Instinct numéral",
+        "desc": "Ils savent d'instinct quel chiffre précis apportera fortune ou infortune à une personne donnée et peuvent l'intégrer à leurs présages ou à des objets enchantés.",
+        "phrase": "Les nombres sont leur langage secret."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Physionomie féline",
+        "desc": "Les Neko possèdent des yeux félins aux pupilles fendues, une gestuelle souple et instinctive, ainsi que des réflexes aiguisés rappelant ceux des chats."
+      },
+      {
+        "nom": "Attributs naturels",
+        "desc": "Ils disposent d'une vision nocturne, de griffes rétractables et peuvent émettre un ronronnement apaisant capable d'influencer subtilement l'état émotionnel de leur entourage."
+      },
+      {
+        "nom": "Magie indomptable",
+        "desc": "Leur pouvoir ne répond ni à la contrainte ni à l'autorité. Seule la douceur, le soin et la tendresse permettent à leur magie d'exprimer pleinement sa chance ; la brutalité, elle, attire le malheur."
+      }
+    ]
+  },
+  "vampyr": {
+    "categorie": "Intermédiaires",
+    "nom": "Vampyr",
+    "tagline": "Soif & Obsession",
+    "cardImage": "https://i.postimg.cc/xTYT2r5t/Chat-GPT-Image-15-fevr-2026-18-39-31.png",
+    "accroche": "Prédateurs passionnels.",
+    "images": [
+      "https://i.pinimg.com/736x/ae/ff/df/aeffdf7761adcb6b24216960d6a6ac88.jpg",
+      "https://i.pinimg.com/736x/1a/8f/bc/1a8fbc3ac997c18f6d2475ba79fb0c7f.jpg",
+      "https://i.pinimg.com/736x/4b/b3/62/4bb3625340aceffc511bd6d8e3558433.jpg"
+    ],
+    "description": [
+      "<p><bb1>Prédateurs</bb1> jugés <i4>imprévisibles</i4>, ils sont perçus comme des êtres <ls>monomaniaques</ls>, dominés par des <u2>pulsions</u2> qu'ils peinent à contenir. À la nuit tombée, la <ba4>soif</ba4> s'éveille en eux comme une <c3>malédiction vivante</c3>. Elle doit être étanchée, coûte que coûte, sous peine de voir leur santé et leur puissance décliner.La soif n'est pas <i4>seulement </i4>un désir, <span style=\"text-decoration: underline;\">c'est une nécessité.</span>Si, au terme d'un <ba2>cycle lunaire complet</ba2>, un Vampyr n'a pas assouvi sa faim, leur <bb2>douleur</bb2> devient <bb4>mortelle</bb4>. Elle s'installe progressivement au fil des jours, d'abord sourde puis de plus en plus aiguë, tandis que les symptômes apparaissent et s'aggravent lentement. Des céphalées insoutenables, comparables à un soleil naissant dans leur crâne, les consument de l'intérieur. Leur esprit brûle, leur corps devient une torche vivante et <time>ils meurent brûlés vifs.</time></p>",
+      "<p>On les retrouve majoritairement en <ls>basse ville</ls>. Les Vampyrs ne forment pas de communautés soudées : <span style=\"text-decoration: underline;\">ils sont indépendants</span>, solitaires par nature, et chassent seuls. Peu enclins au partage, ils suivent leurs propres règles et refusent la dépendance. Certains assouvissent leur soif dans des <em>bars obscurs</em>, lieux clandestins où le sang se mêle aux excès et aux corps dans une fusion trouble et dangereuse. D'autres ont choisi une voie plus insidieuse, usant de leur pouvoir pour devenir des <bb3>figures de culte</bb3>, des gourous charismatiques manipulant des fidèles qui glissent lentement vers une soumission consentie. Nombre d'entre eux mettent également leurs capacités au service de contrats, travaillant comme <ls>chasseurs de primes</ls>, traquant leurs cibles grâce à leurs sens exacerbés et à leur faculté de marquage. Pourtant, beaucoup refusent toute forme d'allégeance durable, préférant survivre au jour le jour, farouchement attachés à une seule chose : <u3>ne jamais se soumettre</u3>.</p>",
+      "<p>Les Vampyrs sont des créatures d'<bb3>obsession</bb3>. Leurs pensées s'accrochent, se répètent, s'enracinent. Cette nature rend leur pouvoir de <ls>marquage</ls> particulièrement redouté. Car un Vampyr peut marquer une proie, parfois pour <bb7>l'éternité. </bb7>Une empreinte invisible, persistante, impossible à ignorer.<ba4>Ils sont passionnels en tout.</ba4> Mais jamais autant que lorsqu'il est question de sentiments.Si beaucoup d'entre eux abordent le désir avec une liberté assumée, l'amour, lui, est <bb6>sacré.</bb6> Un Vampyr ne tombe amoureux qu'une seule fois. <ba4>Et cet amour ne s'éteint jamais</ba4>. Lorsque l'être aimé est choisi, son sang devient un <em>poison</em> pour tous les autres Vampyrs qui tenteraient de le convoiter. Lui seul peut être marqué dans la durée.</p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Sens décuplés",
+        "desc": "Les Vampyrs possèdent une acuité sensorielle extrême : vue, ouïe, toucher, goût et odorat sont amplifiés au-delà des limites normales, rendant chaque sensation plus vive, plus intense.",
+        "phrase": "Chaque sensation est un monde."
+      },
+      {
+        "nom": "Rapidité surnaturelle",
+        "desc": "Leur vitesse est fulgurante, leur permettant de fondre sur une proie ou de disparaître en un instant.",
+        "phrase": "Un battement de cil — et ils ont disparu."
+      },
+      {
+        "nom": "Marquage de proie",
+        "desc": "Par le regard ou le sang, ils peuvent marquer une cible et en remonter la trace pendant plus d'une heure. Certains marquages peuvent devenir permanents.",
+        "phrase": "Une fois marqué, on ne leur échappe plus."
+      },
+      {
+        "nom": "Sang aphrodisiaque",
+        "desc": "Leur sang possède des propriétés addictives et aphrodisiaques, capables de créer une dépendance dangereuse.",
+        "phrase": "Une goutte suffit à enchaîner."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Signes post-nourrissage",
+        "desc": "Après s'être nourris, les Vampyrs peuvent pleurer du sang et dégager une odeur métallique."
+      },
+      {
+        "nom": "Traits prédateurs",
+        "desc": "Leurs canines sont prédominantes et leur présence naturellement magnétique, troublante et attirante."
+      },
+      {
+        "nom": "Beauté éternelle",
+        "desc": "Même après la mort, leur corps ne se décompose pas, conservant une apparence figée et intacte."
+      }
+    ]
+  },
+  "lycan": {
+    "categorie": "Intermédiaires",
+    "nom": "Lycan",
+    "tagline": "Lune & Loyauté",
+    "cardImage": "https://i.postimg.cc/jdKdbVc6/Chat-GPT-Image-15-fevr-2026-18-52-10.png",
+    "accroche": "Liés par la meute et guidés par la Lune.",
+    "images": [
+      "https://i.pinimg.com/736x/4b/23/99/4b239966210dc5434bd84c0bf9d01252.jpg",
+      "https://i.pinimg.com/736x/a1/05/57/a105571cab2688832c3c90c31267fd78.jpg",
+      "https://i.pinimg.com/736x/36/30/86/3630860c78aff5228760c602334ecae5.jpg"
+    ],
+    "description": [
+      "<p>Créatures <i3>de lune et de loyauté</i3>, les Lycans font partie des rares vanes à fonctionner en <ls>meute</ls>, selon une hiérarchie presque militaire. Leur ordre n'est pas démocratique, ni négociable. <u>Il est sacré.</u></p>",
+      "<p><c4>L'Alpha n'est pas choisi par la meute.</c4> Il est désigné par la <ls>Lune</ls> elle-même. À la mort d'un Alpha, un autre est nommé à la nuit tombée, et la <bb3>marque lunaire</bb3> apparaît sur son corps. <i3>Blanche ou noire</i3>, elle évolue en osmose avec le cycle lunaire, vibrant au rythme des phases. Contester l'ordre établi est inenvisageable : <u2>seule la mort libère un Alpha de sa fonction.</u2></p>",
+      "<p>Le <bb1>Bêta</bb1>, lui, est choisi par l'Alpha. Par une <ba4>morsure rituelle</ba4>, une <ls>marque de demi-lune</ls> se dessine sur sa peau. Les <bb2>Omégas</bb2> portent un quart de lune dès la naissance, signe de leur place au sein de la structure. Cette hiérarchie n'est pas seulement symbolique, elle est gravée dans la chair.</p>",
+      "<p>Les Lycans partagent un <u>pouvoir de meute</u>. Ils sont connectés les uns aux autres par un lien instinctif et profond. Ils savent lorsqu'un des leurs est en danger, ressentent les fractures, les tensions, les pertes. <bb3>Être Lycan, c'est ne jamais être seul.</bb3></p>",
+      "<p><u>Territoriaux et possessifs</u>, ils défendent ce qu'ils considèrent comme leur domaine, qu'il s'agisse d'un territoire ou d'une personne. <ba4>Amants intenses</ba4>, parfois <bb2>brutaux</bb2>, ils cherchent naturellement à dominer dans leurs relations, désireux d'être l'Alpha du couple. Leur nature est ardente, instinctive, rarement tempérée.</p>",
+      "<p><bb2>Lunatiques</bb2>, leurs humeurs fluctuent avec la Lune. Leur agressivité atteint son paroxysme lors de la pleine lune, tandis que les phases décroissantes peuvent les rendre plus introspectifs ou instables. Pourtant, derrière cette violence légendaire se cache une loyauté inébranlable. Les Lycans sont des êtres d'honneur : <ba2>leur parole est unique, et elle engage.</ba2></p>",
+      "<p><bb4>La meute est tout</bb4>. Ils vivent, travaillent et prospèrent ensemble. Les Lycans isolés sont rares, bannis ou survivants d'une meute disparue. Rejoindre une nouvelle meute est extrêmement difficile. Beaucoup tentent alors de recréer ce lien ailleurs, cherchant désespérément à retrouver ce sentiment d'appartenance qui définit leur essence.</p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Empathie de meute",
+        "desc": "Les Lycans sont reliés entre eux par un lien instinctif. Ils ressentent le danger, la douleur ou la mort d'un membre de leur meute. Ce lien s'étend également aux personnes qu'ils ont mordues, créant une connexion indélébile.",
+        "phrase": "Jamais seul, toujours lié."
+      },
+      {
+        "nom": "Force surnaturelle",
+        "desc": "Leur puissance est particulièrement forte sous l'influence de la pleine lune.",
+        "phrase": "La Lune décuple leur force."
+      },
+      {
+        "nom": "Instinct territorial",
+        "desc": "Excellents pisteurs, ils possèdent un sens de l'orientation aigu et peuvent marquer un territoire par leurs griffes. Ils détectent facilement toute présence étrangère.",
+        "phrase": "Leur territoire est sacré."
+      },
+      {
+        "nom": "Régénération de meute",
+        "desc": "Leur capacité de guérison est directement liée au lien de meute. Blessé, un Lycan puise dans la force vitale collective des siens, accélérant drastiquement sa régénération. Plus la meute est nombreuse et unie, plus la guérison est rapide. Isolé, un Lycan perd cet avantage et récupère à un rythme bien plus ordinaire — d'où l'adage : un loup solitaire est un loup mort.",
+        "phrase": "La meute guérit, la solitude tue."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Griffes d'argent",
+        "desc": "Ils possèdent des griffes rétractables d'apparence argentée, résistantes et tranchantes."
+      },
+      {
+        "nom": "Marques lunaires",
+        "desc": "L'Alpha porte la marque lunaire complète, évoluant selon le cycle. Le Bêta arbore une demi-lune, et l'Oméga un quart de lune gravé dans la peau."
+      }
+    ]
+  },
+  "sirene": {
+    "categorie": "Intermédiaires",
+    "nom": "Sirène",
+    "tagline": "Profondeur & Fascination",
+    "cardImage": "https://i.postimg.cc/VNDrpfnh/Chat-GPT-Image-15-fevr-2026-19-31-21.png",
+    "accroche": "Prédatrices des mers, charme toxique incarné.",
+    "images": [
+      "https://i.pinimg.com/736x/3e/59/b7/3e59b7238cf0e865e0985d47d82e9c61.jpg",
+      "https://i.pinimg.com/736x/ab/d4/b9/abd4b9c16f4b4f18a30311fb06291e65.jpg",
+      "https://i.pinimg.com/736x/6e/05/ee/6e05eebf970bb9982045a5225a1161ae.jpg"
+    ],
+    "description": [
+      "<p>Créatures <i3>de profondeur et de fascination</i3>, les Sirènes sont des vanes liées aux mers et aux océans, aussi changeantes que les eaux dont elles sont issues. Certaines viennent des <i>fonds abyssaux</i>, là où la lumière ne pénètre jamais ; d'autres naissent dans des <i2>mers plus claires</i2>, baignées de soleil. Leur apparence porte la trace de ces origines : certaines ont la peau pâle comme si elles n'avaient jamais vu l'aube, tandis que d'autres arborent un teint hâlé façonné par la surface et les courants lumineux.</p>",
+      "<p>Les Sirènes sont des créatures profondément <u>observatrices</u>. Elles observent longtemps avant d'agir, attirant leurs proies avec patience pour mieux les entraîner dans des <bb1>profondeurs</bb1> dont elles seules connaissent les lois. Ce sont des prédatrices nées.</p>",
+      "<p><i3>Les Sirènes sont uniquement des femmes.</i3> Elles vivent rarement au sein d'une grande communauté. Leur société est réputée compétitive, <u>parfois cruelle</u>, et beaucoup préfèrent former leurs propres cercles plutôt que de se soumettre à cette <ba4>rivalité permanente</ba4>. Entre elles, alliances et trahisons sont aussi mouvantes que les marées.</p>",
+      "<p>Elles incarnent à la fois les défauts et les charmes que l'on prête aux passions humaines : <c3>séduction, jalousie, caprice, fascination</c3>. Leur présence trouble, attire et désarme. Les Sirènes se fondent aisément dans la société des autres vanes grâce à un charme indéniablement <bb3>toxique</bb3>, comme un courant invisible qui attire vers le large.</p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Magie aquatique",
+        "desc": "Les Sirènes manipulent l'eau et l'humidité. La pluie, les brumes et les environnements marins amplifient considérablement leurs pouvoirs.",
+        "phrase": "L'eau leur obéit."
+      },
+      {
+        "nom": "Froid abyssal",
+        "desc": "Elles peuvent abaisser la température de leur environnement, créer des nappes de buée, des vagues de froid ou provoquer chez une cible une sensation de noyade ou d'hypothermie par simple contact.",
+        "phrase": "Leur toucher glace les âmes."
+      },
+      {
+        "nom": "Larmes enchantées",
+        "desc": "Les larmes de Sirène possèdent de puissantes propriétés magiques. Utilisées dans certains rituels ou potions par les sorciers, elles peuvent prolonger la vie et restaurer la beauté.",
+        "phrase": "Chaque larme vaut de l'or."
+      },
+      {
+        "nom": "Perles du cœur",
+        "desc": "Certaines de leurs écailles peuvent se transformer en perles précieuses capables de révéler la voix d'un futur être aimé. Les Sirènes peuvent offrir cette perle… ou avaler celle d'un couple pour saboter leur histoire d'amour.",
+        "phrase": "Cadeau ou malédiction, au gré des marées."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Beauté aquatique",
+        "desc": "Leur beauté devient surnaturelle lorsque leur peau est mouillée, prenant une légère iridescence."
+      },
+      {
+        "nom": "Voix enchanteresse",
+        "desc": "Leur voix capte naturellement l'attention et peut exercer une fascination presque hypnotique."
+      },
+      {
+        "nom": "Transformation marine",
+        "desc": "Lorsque leur corps est entièrement immergé, leurs jambes se transforment en queue de sirène."
+      },
+      {
+        "nom": "Présence mouvante",
+        "desc": "Leurs cheveux semblent constamment animés d'un léger mouvement, comme portés par un courant invisible."
+      }
+    ]
+  }
+}
