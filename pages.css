@@ -480,3 +480,96 @@ a{text-decoration:none;color:inherit}
     transform: translateY(0);
   }
 }
+
+#v-cm .vm-body bb1 { font-weight: 600; color: var(--co-1); }
+#v-cm .vm-body bb2 { font-weight: 600; color: var(--co-2); }
+#v-cm .vm-body bb3 {
+  font-weight: 600;
+  background: var(--co-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#v-cm .vm-body bb4 { font-weight: 600; color: var(--co-1); font-family: var(--font-3); }
+#v-cm .vm-body bb6 {
+  font-weight: 600;
+  font-family: var(--font-3);
+  background: var(--co-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#v-cm .vm-body bb7 { font-weight: 600; font-family: var(--font-3); color: var(--contrast); }
+
+#v-cm .vm-body i2 {
+  font-style: italic;
+  font-family: var(--font-4);
+  color: var(--co-2);
+}
+#v-cm .vm-body i3 {
+  font-style: italic;
+  font-family: var(--font-4);
+  background: var(--co-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#v-cm .vm-body i4 {
+  font-style: italic;
+  font-family: var(--font-4);
+  color: var(--contrast);
+}
+
+#v-cm .vm-body u2 {
+  color: var(--contrast);
+  box-shadow: inset 0 -6px 0 var(--co-2);
+  text-decoration: none;
+}
+#v-cm .vm-body u3 {
+  background: linear-gradient(to right, var(--co-1), var(--co-2));
+  background-position: bottom;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+
+#v-cm .vm-body c1 { color: var(--co-1); }
+#v-cm .vm-body c2 { color: var(--co-2); }
+#v-cm .vm-body c3 {
+  background: var(--co-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#v-cm .vm-body c4 { color: var(--contrast); }
+
+#v-cm .vm-body ls {
+  font-family: 'Courier New', monospace;
+  letter-spacing: 4px;
+}
+
+#v-cm .vm-body time {
+  display: inline-block;
+  padding: 2px 8px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: white;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+#v-cm .vm-body min3 {
+  display: inline-block;
+  line-height: 12px;
+  padding: 0px 4px 0 2px;
+  text-shadow: 1px 1px 0 var(--c1);
+  font-style: italic;
+  color: white;
+  font-size: var(--little-size);
+  text-transform: lowercase;
+  background: var(--co-gradient);
+}
