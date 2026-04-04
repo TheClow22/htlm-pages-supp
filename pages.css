@@ -368,3 +368,107 @@ a{text-decoration:none;color:inherit}
   #va .rdsc .grid-two{grid-template-columns:1fr}
 }
 @media(max-width:600px){#va .rhi img:nth-child(3){display:none}}
+
+/* ═══════════════════════════════════════════
+   VANES MINEURES - GRILLE
+   ═══════════════════════════════════════════ */
+
+#v-cm .vm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  #v-cm .vm-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0;
+  }
+}
+
+#v-cm .vm-card {
+  background: rgba(20, 20, 35, 0.6);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+#v-cm .vm-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, 
+    rgba(224, 56, 174, 0.5), 
+    rgba(168, 85, 247, 0.5), 
+    rgba(73, 99, 252, 0.5)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#v-cm .vm-card:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  background: rgba(25, 25, 40, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.15);
+}
+
+#v-cm .vm-card:hover::before {
+  opacity: 1;
+}
+
+#v-cm .vm-header {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #A855F7;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+#v-cm .vm-body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 300;
+}
+
+#v-cm .vm-card {
+  animation: vmFadeIn 0.5s ease-out backwards;
+}
+
+#v-cm .vm-card:nth-child(1) { animation-delay: 0.05s; }
+#v-cm .vm-card:nth-child(2) { animation-delay: 0.1s; }
+#v-cm .vm-card:nth-child(3) { animation-delay: 0.15s; }
+#v-cm .vm-card:nth-child(4) { animation-delay: 0.2s; }
+#v-cm .vm-card:nth-child(5) { animation-delay: 0.25s; }
+#v-cm .vm-card:nth-child(6) { animation-delay: 0.3s; }
+#v-cm .vm-card:nth-child(7) { animation-delay: 0.35s; }
+#v-cm .vm-card:nth-child(8) { animation-delay: 0.4s; }
+#v-cm .vm-card:nth-child(9) { animation-delay: 0.45s; }
+#v-cm .vm-card:nth-child(10) { animation-delay: 0.5s; }
+#v-cm .vm-card:nth-child(11) { animation-delay: 0.55s; }
+#v-cm .vm-card:nth-child(12) { animation-delay: 0.6s; }
+
+@keyframes vmFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
