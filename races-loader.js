@@ -2,7 +2,7 @@
   'use strict';
   
   // ⚙️ CONFIGURATION
-  const COMMIT_HASH = 'bc5d253d0a1676ef23f81a5b992f3d8f1a9e2833'; // ⚠️ REMPLACE PAR TON HASH !
+  const COMMIT_HASH = '27d5907f50406a0d369add7ccbc0a05caea63b9b'; // ⚠️ REMPLACE PAR TON HASH !
   const JSON_URL = `https://cdn.jsdelivr.net/gh/TheClow22/htlm-pages-supp@${COMMIT_HASH}/races-vanes.json`;
   
   let racesData = {};
