@@ -546,5 +546,64 @@
         "desc": "Leurs cheveux semblent constamment animés d'un léger mouvement, comme portés par un courant invisible."
       }
     ]
+  },
+  "naga": {
+    "categorie": "Intermédiaires",
+    "nom": "Naga",
+    "tagline": "Sceau & Silence",
+    "cardImage": "https://www.zupimages.net/up/26/16/aqcc.png",
+    "accroche": "Gardiens des serments et des secrets enfouis.",
+    "images": [
+      "https://www.zupimages.net/up/26/16/cnp8.png",
+      "https://i.pinimg.com/736x/f8/8e/61/f88e61582ba836e470cf6e9d9da3321c.jpg",
+      "https://www.zupimages.net/up/26/16/id28.png"
+    ],
+    "description": [
+      "<p>Créatures <i3>de sceau et de silence</i3>, les Nagas sont des vanes associées aux <ls>serments</ls>, aux <ls>secrets</ls> et à tout ce qui doit demeurer <u>fermé</u>. Leur existence porte la trace d'un sacré ancien, presque oublié, qui les lie aux pactes, aux reliques et aux vérités qu'il vaut mieux ne jamais prononcer à voix haute. On les décrit souvent comme des êtres d'une <bb3>beauté sacrée</bb3>, aussi troublante que solennelle, dont la présence impose le calme autant que la méfiance.</p>",
+      "<p><u>Les Nagas ne séduisent pas : ils scellent.</u> Là où d'autres dominent par la force, le charme ou la ruse, eux imposent l'arrêt. Leur magie agit comme une suspension du monde : un regard peut ralentir un geste, figer un corps, enfermer une cible dans un instant qui refuse d'avancer. Ce pouvoir de <bb1>fixation</bb1>, partagé par toute leur espèce, alimente depuis toujours les récits qui les rapprochent de créatures capables de changer la chair en pierre.</p>",
+      "<p>Mais leur véritable singularité réside dans leur <ba4>langue fourchue</ba4>, à la fois attribut physique et organe sacré de leur magie. Car chez eux, la parole n'est jamais anodine. Les Nagas possèdent un lien ancien avec les <u2>serments</u2>, les secrets confiés et les accords prononcés. Ils peuvent lier une promesse, verrouiller une confidence, sceller un pacte ou interdire qu'un mot soit répété. Leur voix ne soumet pas l'esprit : elle agit sur la <i>valeur magique</i> de ce qui est dit. Une parole prononcée devant eux peut devenir un engagement impossible à rompre sans en payer le prix.</p>",
+      "<p>À cela s'ajoute leur <bb2>venin</bb2>, que tous possèdent mais qui ne se manifeste jamais de la même manière. Chaque Naga naît avec un venin qui lui est propre, presque intime, reflet d'une nature singulière. Certains paralysent, d'autres troublent la mémoire, verrouillent la vérité, imposent le silence ou marquent une dette. Cette diversité fait de leur espèce des êtres aussi redoutés qu'indispensables lorsqu'il est question de protéger, conserver, punir ou faire taire.</p>",
+      "<p>Froids au toucher, silencieux dans leurs mouvements, les Nagas dégagent une impression de maîtrise presque inhumaine. Leur peau, lisse et nacrée, semble parfois capter la lumière comme une surface humide ou polie, laissant apparaître des reflets iridescents rappelant discrètement la mue. <i4>On dit qu'ils portent en eux des trésors que nul coffre ne contient :</i4> reliques scellées, vérités interdites, pactes vivants, souvenirs enfermés et secrets qu'ils ne rendent jamais sans conséquence.</p>"
+    ],
+    "pouvoirs": [
+      {
+        "nom": "Regard de fixation",
+        "desc": "Les Nagas peuvent ralentir, engourdir puis figer partiellement ou totalement une cible par le regard. Les plus puissants sont capables d'un véritable scellement, suspendant un corps dans un état proche de la pétrification.",
+        "phrase": "Un regard suffit à tout arrêter."
+      },
+      {
+        "nom": "Langue jurée",
+        "desc": "Leur parole possède une autorité magique sur les serments, les promesses, les secrets et les accords. Ils peuvent lier une parole, interdire une révélation ou rendre un pacte contraignant.",
+        "phrase": "Chaque mot prononcé devient loi."
+      },
+      {
+        "nom": "Venin singulier",
+        "desc": "Chaque Naga possède un venin aux propriétés propres : paralysie, mutisme, vérité forcée, confusion, marquage d'une dette ou altération d'un souvenir.",
+        "phrase": "Leur poison est unique — et imprévisible."
+      },
+      {
+        "nom": "Scellement rituel",
+        "desc": "Ils excellent dans l'art de verrouiller magiquement un objet, un lieu, une relique, une information ou une présence, faisant d'eux de redoutables gardiens.",
+        "phrase": "Ce qui est scellé ne se rouvre jamais sans prix."
+      }
+    ],
+    "particularites": [
+      {
+        "nom": "Beauté sacrée",
+        "desc": "Les Nagas possèdent une beauté froide, solennelle, presque religieuse, qui inspire autant l'admiration que l'inconfort."
+      },
+      {
+        "nom": "Peau iridescente",
+        "desc": "Leur peau est lisse, fraîche et parcourue de reflets nacrés ou humides, évoquant subtilement la mue ou l'éclat d'écailles invisibles."
+      },
+      {
+        "nom": "Langue fourchue",
+        "desc": "Attribut le plus distinctif de leur espèce, elle n'est pas seulement physique : elle est au cœur de leur magie verbale et de leur pouvoir de sceau."
+      },
+      {
+        "nom": "Regard minéral",
+        "desc": "Leurs yeux donnent souvent une impression fixe, polie ou opaline, comme si la lumière glissait à leur surface sans jamais les réchauffer."
+      }
+    ]
   }
 }
